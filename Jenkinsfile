@@ -19,14 +19,14 @@ node('build-slave') {
                 checkout scm
                 if (params.diksha_tenant_tag == "master") {
                 def scmVars = checkout scm
-                checkout scm: ([$class: 'GitSCM', branches: [[name: "refs/heads/master"]], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'CloneOption', depth: 0, noTags: false, reference: '', shallow: true]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '08c3d026-0bf1-4bee-bcfd-a2b22419cd3c', url: 'https://github.com/project-sunbird/demo-tenant.git']]])
+                checkout scm: ([$class: 'GitSCM', branches: [[name: "refs/heads/master"]], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'CloneOption', depth: 0, noTags: false, reference: '', shallow: true]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '08c3d026-0bf1-4bee-bcfd-a2b22419cd3c', url: 'https://github.com/NIUANULP/nulp-tenant.git']]])
                 commit_hash = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
                 branch_name = sh(script: 'git name-rev --name-only HEAD | rev | cut -d "/" -f1| rev', returnStdout: true).trim()
                 build_tag = branch_name + "_" + commit_hash + "_" + env.BUILD_NUMBER
                 println(ANSI_BOLD + ANSI_YELLOW + "diksha_tenant_tag not specified, using the latest commit hash: " + commit_hash + ANSI_NORMAL)
             } else {
                 def scmVars = checkout scm
-                checkout scm: ([$class: 'GitSCM', branches: [[name: "refs/tags/params.diksha_tenant_tag"]], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'CloneOption', depth: 0, noTags: false, reference: '', shallow: true]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '08c3d026-0bf1-4bee-bcfd-a2b22419cd3c', url: 'https://github.com/project-sunbird/demo-tenant.git']]])
+                checkout scm: ([$class: 'GitSCM', branches: [[name: "refs/tags/params.diksha_tenant_tag"]], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'CloneOption', depth: 0, noTags: false, reference: '', shallow: true]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '08c3d026-0bf1-4bee-bcfd-a2b22419cd3c', url: 'https://github.com/NIUANULP/nulp-tenant.git']]])
                 build_tag = params.diksha_tenant_tag + "_" + env.BUILD_NUMBER
                 println(ANSI_BOLD + ANSI_YELLOW + "diksha_tenant_tag specified, building from tag: " + params.diksha_tenant_tag + ANSI_NORMAL)
             }
