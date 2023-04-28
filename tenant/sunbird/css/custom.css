@@ -2418,4 +2418,15 @@ section img{
     background: #990000 !important;
     color: #fff !important;
 }
-  
+.font-700{
+    font-weight: 700;
+}
+.deadline-ext-bar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    background: #FFC142;
+    font-size: 20px;
+    text-align: center;
+}
