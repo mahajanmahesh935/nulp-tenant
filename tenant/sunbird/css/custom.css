@@ -179,8 +179,31 @@ header{
         padding: 0 15px !important;
     }
 }
+@media(min-width:320px){
+    .deadline-ext-bar{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 20px 0;
+        background: #FFC142;
+        font-size: 9px;
+        text-align: center;
+    }
+    .deadline-box {
+        position: absolute;
+    }
+}
 
 @media(min-width:768px){
+    .deadline-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .deadline-ext-bar{
+        font-size: 20px;
+    }
     .sb-search-btn input{
         padding: 13px 0 0 24px;
     }
@@ -1503,7 +1526,7 @@ section img{
 .nav-header{
     height: 123px;
     position: absolute;
-    top: 0px;
+    top: 45px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -2250,6 +2273,10 @@ section img{
     } */
 }
 @media (max-width:550px) {
+    .deadline-ext-bar {
+        position: absolute;
+        top: -12px;
+    }
     .learn-container{
         display: flex;
         flex-direction: column-reverse !important;
@@ -2421,12 +2448,25 @@ section img{
 .font-700{
     font-weight: 700;
 }
-.deadline-ext-bar{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding: 10px 0;
-    background: #FFC142;
-    font-size: 20px;
+
+
+
+.deadline-cover {
     text-align: center;
+    animation: animate 
+        1.9s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
