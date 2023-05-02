@@ -59,6 +59,9 @@ header{
     width: 100%;
     background-position: right;
 }
+.sb-baner-img4{
+    background-image: url(../images/banner3.jpg) !important;
+}
 .sb-baner .banner-cover{
     padding-top: 70px;
 }
