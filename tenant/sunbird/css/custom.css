@@ -1548,7 +1548,7 @@ section img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 34px;
+    gap: 68px;
     color: #fff !important;
 }
 .head-content{
