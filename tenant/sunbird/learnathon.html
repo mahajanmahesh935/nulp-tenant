@@ -159,25 +159,22 @@
 
   <div class="total-section">
     <div>
-      <div id="total" class="number">363</div>
+      <div id="total" class="number">18647</div>
       <div class="num-cont">Total Registrations</div>
     </div>
     <div>
-      <div id="individual" class="number">254</div>
-      <div class="num-cont">Individuals</div>
+      <div  class="number" id=voteCount ></div>
+      <div class="num-cont">Total Votes</div>
     </div>
     <div>
-      <div id="institution" class="number">109</div>
-      <div class="num-cont">Groups</div>
-    </div>
-    <div>
-      <div id="cities" class="number">162</div>
-      <div class="num-cont">Cities</div>
-    </div>
-    <div>
-      <div id="cities" class="number">251</div>
+      <div class="number">264</div>
       <div class="num-cont">Total Submissions</div>
     </div>
+    <div>
+      <div  class="number">51</div>
+      <div class="num-cont">Shortlisted Entries</div>
+    </div>
+
   </div>
   <!-- total section end here -->
 
@@ -443,17 +440,33 @@
     });
 
   </script>
-      <!-- <script>
+      <script>
+        let voteCount;
+        $(function() {
+            $.ajax({
+                url: window.location.origin + '/voteCount',
+                type: "GET",
+                processData: false,
+                contentType: 'application/json',
+                success: function (response) {
+                  console.log("response====", response);
+                  voteCount = response.result.count
+                  document.getElementById("voteCount").innerHTML = response.result.count;
+                }
+            })
+        })
+    </script>
+      <script>
         fetch("/counts")
           .then((response) => response.json())
           .then((data) => {
             ({cityCount,groupCategoryCount,individualCategoryCount,institutionCount,totalCount} = data.result.data.liveLearnCounts[0]);
-            document.querySelector("#total").innerText = totalCount - 1;
+            document.querySelector("#total").innerText = totalCount-10; //until we block test users we are minusing test user count approximatly 10
             document.querySelector("#individual").innerText = individualCategoryCount;
             document.querySelector("#institution").innerText = institutionCount;
             document.querySelector("#cities").innerText = cityCount;
           })
-        </script> -->
+        </script>
 </body>
 
 </html>
