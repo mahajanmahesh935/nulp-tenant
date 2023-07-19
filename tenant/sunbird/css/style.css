@@ -268,7 +268,7 @@
 }
 
 .nulp-offers {
-    background-color: #004367;
+    background-color: #00b0cfb3;
     padding: 80px 0;
     color: #fff;
 }
@@ -484,18 +484,24 @@
     transition: all 0.4s ease-in-out;
 
 }
+.bg-blue{
+    background: #dbf8fdb3;
+}
 
 .slick-center img {
     position: absolute;
     top: -19px;
-    left: 78px !important;
+    left: 124px !important;
     width: 80px !important;
     height: 80px !important;
     background: #fff;
 }
+.slick-center .domain-text {
+    color: #fff !important;
+}
 
 .slick-center .domain-box {
-    background: #ffe3b1;
+    background: #00b0cfb3;
     justify-content: center;
 }
 

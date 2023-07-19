@@ -43,11 +43,9 @@
 </head>
 
 <body>
-
-
     <section>
-        <div class="">
-            <nav class="navbar">
+        <div>
+            <nav class="navbar bg-white">
                 <div class="p-0 col-12 col-md-5 col-lg-5 ps-3">
                     <div class="d-flex justify-content-between justify-content-lg-start gap-2 col-12 ps-3 ps-lg-5 pe-3 pe-lg-5">
                         <div class="nav_img">
@@ -160,26 +158,26 @@
         </div>
     </section>
 
-    <section>
-        <div class="container pt-5 pb-5">
+    <section class=" bg-white">
+        <div class="container pt-5 pb-5 bg-white">
             <div class="total-numbers row row-cols-md-3">
                 <div class="single-info text-center">
-                    <h2 class="fw-bold">10</h2>
+                    <span id="count1" class="display-4 fw-bold"></span>
                     <p class="fw-bold">Participating States</p>
                 </div>
                 <div class="single-info text-center">
-                    <h2 class="fw-bold">449</h2>
+                    <span id="count2" class="display-4 fw-bold"></span>
                     <p class="fw-bold">Urban Local Bodies</p>
                 </div>
                 <div class="single-info text-center">
-                    <h2 class="fw-bold">106421</h2>
+                    <span id="count3" class="display-4 fw-bold"></span>
                     <p class="fw-bold">NULP Community Members</p>
                 </div>
             </div>
         </div>
     </section>
 
-
+<div  class="bg-blue">
     <div class="learing">
         <div class="me-3 ms-3 ms-lg-5 me-lg-5 ">
             <div class="row">
@@ -227,10 +225,10 @@
     </div>
 
     <section>
-        <div class="nulp-offers">
+        <div class="">
             <div class="ps-3 pe-4 ps-lg-5 pe-lg-5">
-                <div class="offer-title">
-                    <h1>What NULP offers</h1>
+                <div class="offer-title pt-4">
+                    <h4 class="sb-se-title">What NULP offers</h4>
                 </div>
                 <div class="row row-cols-lg-2 align-items-center justify-content-between">
                     <div class="offer-items pt-4 pt-lg-0 row row-cols-2 row-cols-md-2 row-cols-lg-3">
@@ -471,9 +469,11 @@
             </div>
 
         </section>
-        <section>
-            <div class="offer-title ps-3 pe-3 pt-5 mt-lg-5 ps-lg-5 pe-lg-5">
-                <h4 class="sb-se-title ">What’s Trending on NULP</h4>
+    </div>
+
+        <section class=" nulp-offers">
+            <div class="offer-title ps-3 pe-3  ps-lg-5 pe-lg-5">
+                <h1>What’s Trending on NULP</h1>
             </div>
             <div class="carousel py-32 slick-slide-show-course">
                 <div ngxSlickItem class="slide">
@@ -598,7 +598,6 @@
                 </div>
             </div>
         </section>
-    </div>
 
 
 
@@ -633,7 +632,7 @@
             </div>
         </div>
     </section>
-
+</div>
     <footer>
         <div class="footer-bg">
             <div class="ps-3 pe-4 ps-lg-5 pe-lg-5">
@@ -709,7 +708,28 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="vendorowl/owlcarousel/owl.carousel.js"></script>
+    <script>
+       document.addEventListener("DOMContentLoaded", () => {
+ function counter(id, start, end, duration) {
+  let obj = document.getElementById(id),
+   current = start,
+   range = end - start,
+   increment = end > start ? 1 : -1,
+   step = Math.abs(Math.floor(duration / range)),
+   timer = setInterval(() => {
+    current += increment;
+    obj.textContent = current;
+    if (current == end) {
+     clearInterval(timer);
+    }
+   }, step);
+ }
+ counter("count1", 0, 10, 3000);
+ counter("count2", 100, 449, 2500);
+ counter("count3", 106000, 106421, 106425);
+});
 
+     </script>
 
     <script>
           $(document).ready(function() {
@@ -805,8 +825,8 @@
 
         $('.slick-slide-show-domain').slick({
             infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToShow: 3,
+            slidesToScroll: 3,
             draggable: true,
             margin: 10,
             centerPadding: '60',
