@@ -59,11 +59,13 @@
     outline: none !important;
     box-shadow: none !important;
 }
-
+.IconSearch:focus{
+    outline: none !important;
+}
 @media(min-width:320px) {
     .sb-baner {
         background: #daf5ee;
-
+        z-index: 4;
     }
 }
 
@@ -89,6 +91,7 @@
         width: 100%;
         /* background-position: right; */
         height: 497px;
+        z-index: 4;
 
     }
 }
@@ -361,7 +364,7 @@
 }
 
 .social-icons {
-    font-size: 22px;
+    font-size: 27px;
 }
 
 .footer-right {
@@ -964,11 +967,19 @@ bottom: 20px;
 }
 .ui.grid{width:355px !important}
 
+.small-nav-btn{
+    font-size: 12px;
+    text-decoration: none;
+}
+.searchIcon{
+    font-size: 21px;
+}
+
 .w-180px{
-    width: 180px;
+    width: 115px;
 }
 .w-110px{
-    width: 110px;
+    width: 77px;
 }
 .height-150px{
     height: 111px;
@@ -986,6 +997,12 @@ bottom: 20px;
     width: 70px;
 }
 @media (min-width:992px) {
+    .w-180px{
+        width: 180px;
+    }
+    .w-110px{
+        width: 110px;
+    }
     .upper-arrow p{
         position: relative;
         top:22px ;
@@ -1011,7 +1028,7 @@ bottom: 20px;
 .navbar{
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 99;
     width: 100%;
     box-shadow: 0 3px 6px rgb(0 0 0 / 16%); 
 }
