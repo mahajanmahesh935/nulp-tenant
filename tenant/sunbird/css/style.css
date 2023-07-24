@@ -710,13 +710,6 @@
     .card_Circle {
         width: 102px !important;
         height: 102px !important;
-        border: solid 2px #000;
-        position: absolute;
-        left: 15px !important;
-        overflow: hidden;
-        border-radius: 100%;
-        top: 91px;
-        background-color: #fff;
     }
 }
 .ui.card {
@@ -744,12 +737,7 @@
 @media (min-width:992px) {
     .note-img,
 .chat-img {
-    width: 200px !important;
-    text-align: center;
-    margin: 0px auto !important;
     font-size: 19px !important;
-    font-weight: bold !important;
-    line-height: 20px !important;
 }
 }
 
@@ -827,7 +815,6 @@
 
 .Enrolled_para {
     font-family: sans-serif;
-    /* font-size: 18px; */
     line-height: 13px;
     font-size: 12px;
     font-weight: bold;
@@ -858,60 +845,41 @@
     }
 
     .person_img {
-        border-radius: 50%;
         width: 100px;
         height: 100px;
-
-        position: relative;
-        bottom: 45px;
         left: 6px;
     }
 
     .person_img img {
-
         width: 100px;
         height: 96px;
     }
 
     .Enrolled_para {
-
         font-size: 17px;
-        font-weight: bold;
-        position: relative;
         line-height: 22px;
         top: 6px;
-        width: 200px;
-        padding-left: 10px;
     }
 }
 
 @media (min-width:1200px) {
     .certificates {
         width: 450px;
-        border: 2px #fff solid;
-        border-radius: 10px;
     }
 
     .person_img {
-
         width: 130px;
         height: 120px;
-        border: 2px solid black;
-        position: relative;
         bottom: 45px;
-        left: 6px;
     }
 
     .person_img img {
-        border-radius: 50%;
         width: 128px;
         height: 117px;
     }
 
     .Enrolled_para {
-
         font-size: 13px;
-        position: relative;
         line-height: 15px;
         left: 148px;
         top: 6px;
@@ -1004,22 +972,13 @@ bottom: 20px;
         width: 110px;
     }
     .upper-arrow p{
-        position: relative;
-        top:22px ;
-        right: 44px;
         font-size: 31px !important;
-        font-weight: bold;
     }
     .w-380px{
         width: 380px;
     }
     .lower-arrow p{
-        position: relative;
         font-size: 31px !important;
-        top: -18px;
-        left: 20px;
-        font-size: 14px;
-        font-weight: bold;
     }
     .height-150px{
         height: 150px;
@@ -1039,4 +998,10 @@ bottom: 20px;
 #site-search{
     border: none;
     border-bottom: solid 1px #000;
+}
+.br-10{
+    border-radius: 10%;
+}
+.br-3{
+    border-radius: 3%;
 }

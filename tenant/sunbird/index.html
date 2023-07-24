@@ -45,80 +45,69 @@
 
 <body>
     <section>
-        <div class="">
-            <nav class="navbar bg-white">
-                <div class="p-0 col-12 col-md-5 col-lg-5 ps-lg-3">
-                    <div
-                        class="d-flex justify-content-between align-items-center justify-content-lg-start gap-2 col-12 ps-3 ps-lg-5 pe-3 pe-lg-5">
-                        <div class="nav_img">
-                            <a href="#">
-                                <img src="images/national_logo.png" class="w-180px" alt="Logo" />
-                            </a>
-                        </div>
-                        <div class="nav_img">
-                            <a href="https://mohua.gov.in" target="_blank">
-                                <img class="w-110px" src="images/MoHUA_.png" alt="Logo Center" />
-                            </a>
-                        </div>
-                        <div class="d-lg-none">
-                            <a href="/resources" class="text-white navBtn small-nav-btn rounded-pill">Log/Sign In</a>
-                        </div>
+        <nav class="navbar bg-white">
+            <div class="p-0 col-12 col-md-5 col-lg-5 ps-lg-3">
+                <div
+                    class="d-flex justify-content-between align-items-center justify-content-lg-start gap-2 col-12 ps-3 ps-lg-5 pe-3 pe-lg-5">
+                    <div class="nav_img">
+                        <a href="#">
+                            <img src="images/national_logo.png" class="w-180px" alt="Logo" />
+                        </a>
+                    </div>
+                    <div class="nav_img">
+                        <a href="https://mohua.gov.in" target="_blank">
+                            <img class="w-110px" src="images/MoHUA_.png" alt="Logo Center" />
+                        </a>
+                    </div>
+                    <div class="d-lg-none">
+                        <a href="/resources" class="text-white navBtn small-nav-btn rounded-pill">Log/Sign In</a>
                     </div>
                 </div>
-                <div class="pe-1 d-none navItems d-lg-flex col-8 col-lg-7 align-items-center justify-content-evenly">
-                    <div class="sb-search-btn">
+            </div>
+            <div class="pe-1 d-none navItems d-lg-flex col-8 col-lg-7 align-items-center justify-content-evenly">
+                <div class="sb-search-btn">
+                    <button id="site-search-btn" class="searchIcon"><i class="fa fa-search"
+                            aria-hidden="true"></i></button>
+                    <input class="IconSearch" type="search" id="site-search" name="q" autocomplete="off"
+                        aria-label="Search through site content" placeholder="Explore Content">
+
+                </div>
+                <a class="text-dark" href="#">Home</a>
+                <a class="text-dark" href="aboutus.html" target="_blank">About Us</a>
+                <a class="text-dark" href="#gallery">Gallery</a>
+                <a class="text-dark" href="#">Contact Us</a>
+                <a href="/resources" class="text-white navBtn rounded-pill">Log/Sign In</a>
+            </div>
+            <div class="menu d-flex col-12 col-md-6 justify-content-between ps-3 pe-3 d-lg-none">
+                <div class="input-group search mb-3">
+                    <span class="input-group-text border-0  bg-transparent" id="basic-addon1">
                         <button id="site-search-btn" class="searchIcon"><i class="fa fa-search"
                                 aria-hidden="true"></i></button>
-                        <input class="IconSearch" type="search" id="site-search" name="q" autocomplete="off"
-                            aria-label="Search through site content" placeholder="Explore Content">
-
-                    </div>
-                    <!-- <div class="input-group search mb-3">
-
-                        <span class="input-group-text border-0  bg-transparent" id="basic-addon1">
-                           
-                        </span>
-                        <i class="fa fa-search"></i>
-                        <input type="search" id="site-search" name="q" autocomplete="off"
-                        aria-label="Search through site content"class="form-control  bg-transparent border-0 border-bottom  border-dark"
-                            placeholder="Explore Content" aria-label="Username" aria-describedby="basic-addon1">
-                    </div> -->
-                    <a class="text-dark" href="#">Home</a>
-                    <a class="text-dark" href="aboutus.html" target="_blank">About Us</a>
-                    <a class="text-dark" href="#gallery">Gallery</a>
-                    <a class="text-dark" href="#">Contact Us</a>
-                    <a href="/resources" class="text-white navBtn rounded-pill">Log/Sign In</a>
+                    </span>
+                    <input id="site-search" name="q" autocomplete="off" type="search" class="form-control  bg-transparent border-0 border-bottom  border-dark"
+                        placeholder="Explore Content" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-                <div class="menu d-flex col-12 col-md-6 justify-content-between ps-3 pe-3 d-lg-none">
-                    <div class="input-group search mb-3">
-                        <span class="input-group-text border-0  bg-transparent" id="basic-addon1">
-                            <button id="site-search-btn" class="searchIcon"><i class="fa fa-search"
-                                    aria-hidden="true"></i></button>
-                        </span>
-                        <input type="text" class="form-control  bg-transparent border-0 border-bottom  border-dark"
-                            placeholder="Explore Content" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                    <a href="#"><i data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                            class="bi bi-list text-dark"></i></a>
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                        aria-labelledby="offcanvasExampleLabel">
-                        <div class="offcanvas-body navItems-menu align-items-baseline d-flex justify-content-between">
-                            <div>
-                                <a class="text-dark" href="#">Home</a>
-                                <a class="text-dark" href="#">About Us</a>
-                                <a class="text-dark" href="#gallery">Gallery</a>
-                                <a class="text-dark" href="#">Contact Us</a>
-                            </div>
-                            <div>
-                                <button type="button" class="btn-close fs-5" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
+                <a href="#"><i data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                        class="bi bi-list text-dark"></i></a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-body navItems-menu align-items-baseline d-flex justify-content-between">
+                        <div>
+                            <a class="text-dark" href="#">Home</a>
+                            <a class="text-dark" href="#">About Us</a>
+                            <a class="text-dark" href="#gallery">Gallery</a>
+                            <a class="text-dark" href="#">Contact Us</a>
+                        </div>
+                        <div>
+                            <button type="button" class="btn-close fs-5" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </section>
+
     <section>
         <div id="owl-demo" class="owl-carousel owl-theme sm-d-none">
             <div class="item">
@@ -155,7 +144,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -178,305 +166,299 @@
         </div>
     </section>
 
-<div  class="bg-blue">
-    <div class="learing">
-        <div class="me-3 ms-3 ms-lg-5 me-lg-5 ">
-            <div class="row">
-                <div class="left-wroking d-flex justify-content-center col-12 col-lg-6 mb-5">
-                    <img class="img-fluid" src="images/nulpWorks.png" alt="">
-                </div>
-                <div class="col-12 col-lg-6  ">
-                    <div class="text-center">
+    <div class="bg-blue">
 
-                        <div class="note-img ">
-                            <img src="images/note.png" alt="" class="height-150px">
-                            <p>Learn from well curated
-                                courses and content</p>
-                        </div>
-                        <div>
-
-                            <div class="upper-arrow">
-                                <p class="mb-0">Learning</p>
-                                <img src="images/HowNULPworks1.png" alt="" class="w-380px">
-
-                            </div>
-
-                            <div class="text-center ">
-                                <img src="images/laptop.png" alt="" class="height-150px">
-                            </div>
-
-                            <div class="lower-arrow">
-
-                                <img src="images/HowNULPworks.png" alt="" class="w-380px">
-                                <p>Collaboration</p>
-                            </div>
-
-                        </div>
-                        <div class="chat-img">
-                            <img src="images/chat.png" alt="" class="height-150px">
-                            <p>Co-learn with peers from other
-                                cities and domain experts</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section>
-        <div class="">
-            <div class="ps-3 pe-4 ps-lg-5 pe-lg-5">
-                <div class="offer-title pt-4">
-                    <h4 class="sb-se-title">What NULP offers</h4>
-                </div>
-                <div class="row row-cols-lg-2 align-items-center justify-content-between">
-                    <div class="offer-items pt-4 pt-lg-0 row row-cols-2 row-cols-md-2 row-cols-lg-3">
-                        <div class="single-item text-center">
-                            <h1>15</h1>
-                            <p>Domains</p>
-                        </div>
-                        <div class="single-item text-center">
-                            <h1>70</h1>
-                            <p>Courses</p>
-                        </div>
-                        <div class="single-item text-center">
-                            <h1>200</h1>
-                            <p>Local Urban Solutions</p>
-                        </div>
-                        <div class="single-item text-center">
-                            <h1>4</h1>
-                            <p>National Certification Programs</p>
-                        </div>
-                        <div class="single-item text-center">
-                            <h1>1</h1>
-                            <p>Learning Journey</p>
-                        </div>
-                        <div class="single-item text-center">
-                            <h1>67</h1>
-                            <p>Knowledge Partners</p>
-                        </div>
-                    </div>
-                    <div
-                        class="offer_Video ms-2 ms-lg-0 d-flex d-lg-none justify-content-center align-items-center pt-4 pt-lg-0">
-                        <div class=" ">
-                            <img class="w-70px" src="images/play-button-arrowhead.png" alt="">
-                        </div>
-                    </div>
-                    <div class="d-none d-lg-block work-img pt-4 pt-lg-0">
-                        <div
-                            class=" work_img_wrapper work_img_wrapper_1 d-flex justify-content-center align-items-center">
-                            <img class="w-70px" src="images/play-button-arrowhead.png" alt="">
-                        </div>
-                        <div class=" work_img_wrapper work_img_wrapper_2"></div>
-                        <div class=" work_img_wrapper work_img_wrapper_3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <div class="container-fluid nulp-offers">
-        <div class="ms-3 me-3 ms-lg-5 me-lg-5">
-            <div class=" mb-4 offer-title">
-                <h1 class="mb-5">What NULP users say</h1>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 ">
-                    <p class="ps-0 ps-lg-5 para mb-3">In the SpotLight - <span>Learner of the Month</span></p>
-                    <div class="ps-0 ps-lg-5 col-6">
-                        <p class="Enrolled_para">Enrolled in 7 Courses and
-                            Completed National Certification
-                            Program LCCM</p>
-                    </div>
-                    <div class="row certificates ms-0 ms-lg-3">
-                        <div class="col-4">
-
-                            <div class="person_img">
-                                <img src="images/person.jpg" alt="" class="img-fluid">
-                                <p class="mt-1 ps-1 Name">Mr.Anamik</p>
-                            </div>
-
-
-                        </div>
-                        <div class="col-8 certificate pe-0">
-                            <img src="images/image1.jpg" alt="" class="img-fluid">
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="pe-5 col-12 col-md-6 testimonial mt-5 ">
-                    <div>
-                        <div class="testi-carousel owl-carousel owl-theme testimonials">
-                            <div class="item">
-                                <div class="testimo">
-                                    <h4 class="fw-bold">Learner Testimonial</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.
-                                    </p>
-                                </div>
-                                <div class="testimo">
-                                    <h4 class="fw-bold">Creator Testimonial</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimo">
-                                    <h4 class="fw-bold">Learner Testimonial</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.
-                                    </p>
-                                </div>
-                                <div class="testimo">
-                                    <h4 class="fw-bold">Creator Testimonial</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-    <div class="Domian_BG">
         <section>
-            <div class="ps-3 pe-3 ps-lg-5 pe-lg-5 pt-lg-5 offer-title">
-                <h4 class="sb-se-title ">What are the Domains</h4>
-            </div>
-            <div class="carousel py-32 slick-slide-show-domain">
-
-                <div ngxSlickItem class="slide">
-                    <div class=" d-flex domain-box">
-                        <div>
-                            <img width="100%" src="images/DomainSolidWasteManagement.png">
-
+            <div class="learing">
+                <div class="me-3 ms-3 ms-lg-5 me-lg-5 ">
+                    <div class="row">
+                        <div class="left-wroking d-flex justify-content-center col-12 col-lg-6 mb-5">
+                            <img class="img-fluid" src="images/nulpWorks.png" alt="">
                         </div>
-                        <div class="domain-text">Solid Waste Management</div>
+                        <div class="col-12 col-lg-6">
+                            <div class="text-center">
+                                <div class="note-img ">
+                                    <img src="images/note.png" alt="" class="height-150px">
+                                    <p>Learn from well curated
+                                        courses and content</p>
+                                </div>
+                                <div>
+                                    <div class="upper-arrow">
+                                        <p class="mb-0">Learning</p>
+                                        <img src="images/HowNULPworks1.png" alt="" class="w-380px">
+                                    </div>
 
-                    </div>
-                </div>
-                <div ngxSlickItem class="slide">
-                    <div class=" d-flex domain-box">
-                        <div>
-                            <img src="images/domainWaterSupplyManagement.png">
+                                    <div class="text-center ">
+                                        <img src="images/laptop.png" alt="" class="height-150px">
+                                    </div>
 
+                                    <div class="lower-arrow">
+                                        <img src="images/HowNULPworks.png" alt="" class="w-380px">
+                                        <p>Collaboration</p>
+                                    </div>
+                                </div>
+                                <div class="chat-img">
+                                    <img src="images/chat.png" alt="" class="height-150px">
+                                    <p>Co-learn with peers from other
+                                        cities and domain experts</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="domain-text"> Water supply Management</div>
-
                     </div>
-                </div>
-                <div ngxSlickItem class="slide">
-                    <div class=" d-flex domain-box">
-                        <div>
-                            <img src="images/domainDataGovernanceAnalytics.png">
-
-                        </div>
-                        <div class="domain-text">Data Governance
-                            & Analytics</div>
-
-                    </div>
-                </div>
-                <div ngxSlickItem class="slide">
-                    <div class=" d-flex domain-box">
-                        <div>
-                            <img width="100%" src="images/domainEnvironmentClimate.png">
-
-                        </div>
-                        <div class="domain-text">Environment & Climate</div>
-
-                    </div>
-                </div>
-                <div ngxSlickItem class="slide">
-                    <div class=" d-flex domain-box">
-                        <div>
-                            <img src="images/DomainHousing.png">
-
-                        </div>
-                        <div class="domain-text"> Water supply Management</div>
-
-                    </div>
-                </div>
-                <div ngxSlickItem class="slide">
-                    <div class=" d-flex domain-box">
-                        <div>
-                            <img src="images/domainWaterSupplyManagement.png">
-
-                        </div>
-                        <div class="domain-text"> Water supply Management</div>
-
-                    </div>
-                </div>
-                <div ngxSlickItem class="slide">
-                    <div class=" d-flex domain-box">
-                        <div>
-                            <img src="images/DomainMunicipalFinance.svg">
-
-                        </div>
-                        <div class="domain-text"> Water supply Management</div>
-
-                    </div>
-                </div>
-                <div ngxSlickItem class="slide">
-                    <div class=" d-flex domain-box">
-                        <div>
-                            <img src="images/domainSewerageSanitation.png">
-
-                        </div>
-                        <div class="domain-text"> Water supply Management</div>
-
-                    </div>
-                </div>
-
-                <div ngxSlickItem class="slide">
-                    <div class=" d-flex domain-box">
-                        <div>
-                            <img src="images/DomainSolidWasteManagement.png">
-
-                        </div>
-                        <div class="domain-text"> Water supply Management</div>
-
-                    </div>
-                </div>
-
-                <div class=" d-flex domain-box">
-                    <div>
-                        <img src="images/DomainTownPlanning.png">
-
-                    </div>
-                    <div class="domain-text"> Water supply Management</div>
-
                 </div>
             </div>
-
         </section>
-    </div>
+
+        <section>
+            <div class="Domian_BG">
+                <div class="ps-3 pe-4 ps-lg-5 pe-lg-5">
+                    <div class="offer-title">
+                        <h4 class="sb-se-title">What NULP offers</h4>
+                    </div>
+                    <div class="row row-cols-lg-2 align-items-center justify-content-between">
+                        <div class="offer-items pt-4 pt-lg-0 row row-cols-2 row-cols-md-2 row-cols-lg-3">
+                            <div class="single-item text-center">
+                                <h1>15</h1>
+                                <p>Domains</p>
+                            </div>
+                            <div class="single-item text-center">
+                                <h1>70</h1>
+                                <p>Courses</p>
+                            </div>
+                            <div class="single-item text-center">
+                                <h1>200</h1>
+                                <p>Local Urban Solutions</p>
+                            </div>
+                            <div class="single-item text-center">
+                                <h1>4</h1>
+                                <p>National Certification Programs</p>
+                            </div>
+                            <div class="single-item text-center">
+                                <h1>1</h1>
+                                <p>Learning Journey</p>
+                            </div>
+                            <div class="single-item text-center">
+                                <h1>67</h1>
+                                <p>Knowledge Partners</p>
+                            </div>
+                        </div>
+                        <div
+                            class="offer_Video p-0 ms-2 ms-lg-0 d-flex d-lg-none justify-content-center align-items-center pt-lg-0">
+                                <iframe class="w-100 h-100 br-3" src="https://www.youtube.com/embed/4T4qp1h6k6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="d-none d-lg-block work-img pt-4 pt-lg-0">
+                            <div
+                                class=" work_img_wrapper work_img_wrapper_1 d-flex justify-content-center align-items-center">
+                                <iframe class="w-100 h-100 br-10" src="https://www.youtube.com/embed/4T4qp1h6k6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class=" work_img_wrapper work_img_wrapper_2"></div>
+                            <div class=" work_img_wrapper work_img_wrapper_3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container-fluid nulp-offers">
+                <div class="ms-3 me-3 ms-lg-5 me-lg-5">
+                    <div class=" mb-4 offer-title">
+                        <h1 class="mb-5">What NULP users say</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 ">
+                            <p class="ps-0 ps-lg-5 para mb-3">In the SpotLight - <span>Learner of the Month</span></p>
+                            <div class="ps-0 ps-lg-5 col-6">
+                                <p class="Enrolled_para">Enrolled in 7 Courses and
+                                    Completed National Certification
+                                    Program LCCM</p>
+                            </div>
+                            <div class="row certificates ms-0 ms-lg-3">
+                                <div class="col-4">
+
+                                    <div class="person_img">
+                                        <img src="images/person.jpg" alt="" class="img-fluid">
+                                        <p class="mt-1 ps-1 Name">Mr.Anamik</p>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-8 certificate pe-0">
+                                    <img src="images/image1.jpg" alt="" class="img-fluid">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="pe-5 col-12 col-md-6 testimonial mt-5 ">
+                            <div class="testi-carousel owl-carousel owl-theme testimonials">
+                                <div class="item">
+                                    <div class="testimo">
+                                        <h4 class="fw-bold">Learner Testimonial</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat.
+                                        </p>
+                                    </div>
+                                    <div class="testimo">
+                                        <h4 class="fw-bold">Creator Testimonial</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimo">
+                                        <h4 class="fw-bold">Learner Testimonial</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat.
+                                        </p>
+                                    </div>
+                                    <div class="testimo">
+                                        <h4 class="fw-bold">Creator Testimonial</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="Domian_BG">
+                <div class="ps-3 pe-3 ps-lg-5 pe-lg-5 pt-lg-5 offer-title">
+                    <h4 class="sb-se-title ">What are the Domains</h4>
+                </div>
+                <div class="carousel domain-carousel py-32 slick-slide-show-domain">
+
+                    <div ngxSlickItem class="slide">
+                        <div class=" d-flex domain-box">
+                            <div>
+                                <img width="100%" src="images/DomainSolidWasteManagement.png">
+
+                            </div>
+                            <div class="domain-text">Solid Waste Management</div>
+
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide">
+                        <div class=" d-flex domain-box">
+                            <div>
+                                <img src="images/domainWaterSupplyManagement.png">
+
+                            </div>
+                            <div class="domain-text"> Water supply Management</div>
+
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide">
+                        <div class=" d-flex domain-box">
+                            <div>
+                                <img src="images/domainDataGovernanceAnalytics.png">
+
+                            </div>
+                            <div class="domain-text">Data Governance
+                                & Analytics</div>
+
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide">
+                        <div class=" d-flex domain-box">
+                            <div>
+                                <img width="100%" src="images/domainEnvironmentClimate.png">
+
+                            </div>
+                            <div class="domain-text">Environment & Climate</div>
+
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide">
+                        <div class=" d-flex domain-box">
+                            <div>
+                                <img src="images/DomainHousing.png">
+
+                            </div>
+                            <div class="domain-text"> Water supply Management</div>
+
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide">
+                        <div class=" d-flex domain-box">
+                            <div>
+                                <img src="images/domainWaterSupplyManagement.png">
+
+                            </div>
+                            <div class="domain-text"> Water supply Management</div>
+
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide">
+                        <div class=" d-flex domain-box">
+                            <div>
+                                <img src="images/DomainMunicipalFinance.svg">
+
+                            </div>
+                            <div class="domain-text"> Water supply Management</div>
+
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide">
+                        <div class=" d-flex domain-box">
+                            <div>
+                                <img src="images/domainSewerageSanitation.png">
+
+                            </div>
+                            <div class="domain-text"> Water supply Management</div>
+
+                        </div>
+                    </div>
+
+                    <div ngxSlickItem class="slide">
+                        <div class=" d-flex domain-box">
+                            <div>
+                                <img src="images/DomainSolidWasteManagement.png">
+
+                            </div>
+                            <div class="domain-text"> Water supply Management</div>
+
+                        </div>
+                    </div>
+
+                    <div class=" d-flex domain-box">
+                        <div>
+                            <img src="images/DomainTownPlanning.png">
+
+                        </div>
+                        <div class="domain-text"> Water supply Management</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section class=" nulp-offers">
             <div class="offer-title ps-3 pe-3  ps-lg-5 pe-lg-5">
                 <h1>What’s Trending on NULP</h1>
             </div>
-            <div class="carousel py-32 slick-slide-show-course">
+            <div class="carousel course-carousel py-32 slick-slide-show-course">
                 <div ngxSlickItem class="slide">
                     <div class="item">
                         <div style="justify-content: center" class="d-flex">
@@ -486,15 +468,15 @@
                                 </div>
                                 <div class="small-bow">
                                     <a class="slider_info">
-                                        <img class=" card_Circle" src="images/figure.jpg" width="305px" s />
+                                        <img class="card_Circle" src="images/figure.jpg" width="305px" />
                                     </a>
-                                    <div class="d-flex fw-bold pt-lg-3 mt-4 justify-content-end px-15">
+                                    <div class="d-flex text-dark fw-bold pt-lg-3 mt-4 justify-content-end px-15">
                                         Domain Name
                                     </div>
                                     <div class="px-15 pb-3">
-                                        <div class="fw-bold">Course name</div>
-                                        <div>Name of Creator</div>
-                                        <div>Tags/ Keywords</div>
+                                        <div class="fw-bold text-dark">Course name</div>
+                                        <div class=" text-dark">Name of Creator</div>
+                                        <div class=" text-dark">Tags/ Keywords</div>
                                     </div>
                                 </div>
                             </div>
@@ -510,15 +492,15 @@
                                 </div>
                                 <div class="small-bow">
                                     <a class="slider_info">
-                                        <img class=" card_Circle" src="images/figure.jpg" width="305px" s />
+                                        <img class="card_Circle" src="images/figure.jpg" width="305px" />
                                     </a>
-                                    <div class="d-flex fw-bold pt-lg-3 mt-4 justify-content-end px-15">
+                                    <div class="d-flex text-dark fw-bold pt-lg-3 mt-4 justify-content-end px-15">
                                         Domain Name
                                     </div>
                                     <div class="px-15 pb-3">
-                                        <div class="fw-bold">Course name</div>
-                                        <div>Name of Creator</div>
-                                        <div>Tags/ Keywords</div>
+                                        <div class="fw-bold text-dark">Course name</div>
+                                        <div class=" text-dark">Name of Creator</div>
+                                        <div class=" text-dark">Tags/ Keywords</div>
                                     </div>
                                 </div>
                             </div>
@@ -534,15 +516,15 @@
                                 </div>
                                 <div class="small-bow">
                                     <a class="slider_info">
-                                        <img class=" card_Circle" src="images/figure.jpg" width="305px" s />
+                                        <img class="card_Circle" src="images/figure.jpg" width="305px" />
                                     </a>
-                                    <div class="d-flex fw-bold pt-lg-3 mt-4 justify-content-end px-15">
+                                    <div class="d-flex text-dark fw-bold pt-lg-3 mt-4 justify-content-end px-15">
                                         Domain Name
                                     </div>
                                     <div class="px-15 pb-3">
-                                        <div class="fw-bold">Course name</div>
-                                        <div>Name of Creator</div>
-                                        <div>Tags/ Keywords</div>
+                                        <div class="fw-bold text-dark">Course name</div>
+                                        <div class=" text-dark">Name of Creator</div>
+                                        <div class=" text-dark">Tags/ Keywords</div>
                                     </div>
                                 </div>
                             </div>
@@ -558,15 +540,15 @@
                                 </div>
                                 <div class="small-bow">
                                     <a class="slider_info">
-                                        <img class=" card_Circle" src="images/figure.jpg" width="305px" s />
+                                        <img class="card_Circle" src="images/figure.jpg" width="305px" />
                                     </a>
-                                    <div class="d-flex fw-bold pt-lg-3 mt-4 justify-content-end px-15">
+                                    <div class="d-flex text-dark fw-bold pt-lg-3 mt-4 justify-content-end px-15">
                                         Domain Name
                                     </div>
                                     <div class="px-15 pb-3">
-                                        <div class="fw-bold">Course name</div>
-                                        <div>Name of Creator</div>
-                                        <div>Tags/ Keywords</div>
+                                        <div class="fw-bold text-dark">Course name</div>
+                                        <div class=" text-dark">Name of Creator</div>
+                                        <div class=" text-dark">Tags/ Keywords</div>
                                     </div>
                                 </div>
                             </div>
@@ -582,15 +564,15 @@
                                 </div>
                                 <div class="small-bow">
                                     <a class="slider_info">
-                                        <img class=" card_Circle" src="images/figure.jpg" width="305px" s />
+                                        <img class="card_Circle" src="images/figure.jpg" width="305px" />
                                     </a>
-                                    <div class="d-flex fw-bold pt-lg-5 mt-4 justify-content-end px-15">
+                                    <div class="d-flex text-dark fw-bold pt-lg-3 mt-4 justify-content-end px-15">
                                         Domain Name
                                     </div>
                                     <div class="px-15 pb-3">
-                                        <div class="fw-bold">Course name</div>
-                                        <div>Name of Creator</div>
-                                        <div>Tags/ Keywords</div>
+                                        <div class="fw-bold text-dark">Course name</div>
+                                        <div class=" text-dark">Name of Creator</div>
+                                        <div class=" text-dark">Tags/ Keywords</div>
                                     </div>
                                 </div>
                             </div>
@@ -602,93 +584,94 @@
 
 
 
-    <section id="gallery">
-        <div class="ps-3 pe-3 ps-lg-5 pe-lg-5 partners">
-            <div>
-                <h4 class="sb-se-title ">Gallery</h4>
+        <section id="gallery">
+            <div class="ps-3 pe-3 ps-lg-5 pe-lg-5 partners">
+                <div>
+                    <h4 class="sb-se-title ">Gallery</h4>
+                </div>
+                <div class="carousel gallery-carousel pt-3 pb-3 slick-slide-show-gallery">
+                    <div class="slide"><img class="img-fluid" src="images/Gallery1.jpg" alt=""></div>
+                    <div class="slide"><img class="img-fluid" src="images/Gallery2.jpg" alt=""></div>
+                    <div class="slide"><img class="img-fluid" src="images/Gallery3.jpg" alt=""></div>
+                    <div class="slide"><img class="img-fluid" src="images/Gallery4.jpg" alt=""></div>
+                </div>
             </div>
-            <div class="carousel pt-3 pb-3 slick-slide-show-gallery">
-                <div class="slide"><img class="img-fluid" src="images/Gallery1.jpg" alt=""></div>
-                <div class="slide"><img class="img-fluid" src="images/Gallery2.jpg" alt=""></div>
-                <div class="slide"><img class="img-fluid" src="images/Gallery3.jpg" alt=""></div>
-                <div class="slide"><img class="img-fluid" src="images/Gallery4.jpg" alt=""></div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <div class="ps-3 pe-3 ps-lg-5 pe-lg-5 partners">
-            <div>
-                <h4 class="sb-se-title">Our Partners</h4>
+        <section>
+            <div class="ps-3 pe-3 ps-lg-5 pe-lg-5 partners">
+                <div>
+                    <h4 class="sb-se-title">Our Partners</h4>
+                </div>
+                <div class="carousel partner-carousel pt-3 pb-3 slick-slide-show-partners">
+                    <div class="slide"><img class="partners-img" src="images/partner1.png" alt=""></div>
+                    <div class="slide"><img class="partners-img" src="images/partner2.png" alt=""></div>
+                    <div class="slide"><img class="partners-img" src="images/partner3.png" alt=""></div>
+                    <div class="slide"><img class="partners-img" src="images/partner4.png" alt=""></div>
+                    <div class="slide"><img class="partners-img" src="images/partner5.png" alt=""></div>
+                    <div class="slide"><img class="partners-img" src="images/partner6.png" alt=""></div>
+                    <div class="slide"><img class="partners-img" src="images/partner7.png" alt=""></div>
+                    <div class="slide"><img class="partners-img" src="images/partner8.png" alt=""></div>
+                </div>
             </div>
-            <div class="carousel pt-3 pb-3 slick-slide-show-partners">
-                <div class="slide"><img class="partners-img" src="images/partner1.png" alt=""></div>
-                <div class="slide"><img class="partners-img" src="images/partner2.png" alt=""></div>
-                <div class="slide"><img class="partners-img" src="images/partner3.png" alt=""></div>
-                <div class="slide"><img class="partners-img" src="images/partner4.png" alt=""></div>
-                <div class="slide"><img class="partners-img" src="images/partner5.png" alt=""></div>
-                <div class="slide"><img class="partners-img" src="images/partner6.png" alt=""></div>
-                <div class="slide"><img class="partners-img" src="images/partner7.png" alt=""></div>
-                <div class="slide"><img class="partners-img" src="images/partner8.png" alt=""></div>
-            </div>
-        </div>
-    </section>
-</div>
+        </section>
+
+    </div>
+
     <footer>
         <div class="footer-bg">
             <div class="ps-3 pe-4 ps-lg-5 pe-lg-5">
-                <div class="">
-                    <div class="row">
-                        <div class="footer-anchors col-12 col-lg-6">
-                            <div class="row">
-                                <a class="pb-4 text-dark col-12 col-sm-6 col-md-3"
-                                    href="https://nulp.niua.org/aboutus.html"><span>About Us</span></a>
-                                <a class="pb-4 text-dark col-12 col-sm-6 col-md-3"
-                                    href="https://niua.in/"><span>NIUA</span></a>
-                                <a class="pb-4 text-dark col-12 col-sm-6 col-md-6"
-                                    href="https://niua.org/cdg/"><span>Centre
-                                        for
-                                        Digital Governance</span></a>
-                                <a class="pb-4 text-dark col-12 col-sm-6 col-md-3" href="#"><span>Contact Us</span></a>
-                                <a class="pb-4 text-dark col-12 col-sm-6 col-md-3" href="https://mohua.gov.in"
-                                    target="_blank"><span>MoHUA</span></a>
-                                <a class="pb-4 text-dark col-12 col-sm-6 col-md-6"
-                                    href="https://nudm.mohua.gov.in/"><span>National
-                                        Urban Digital Mission</span></a>
-                                <a class="pb-4 text-dark col-12 col-sm-6 col-md-3" target="_blank"
-                                    href="/learnathon.html"><span>Learnathon</span></a>
-                            </div>
+                <div class="row">
+                    <div class="footer-anchors col-12 col-lg-6">
+                        <div class="row">
+                            <a target="_blank" class="pb-4 text-dark col-12 col-sm-6 col-md-3"
+                                href="https://nulp.niua.org/aboutus.html"><span>About Us</span></a>
+                            <a target="_blank" class="pb-4 text-dark col-12 col-sm-6 col-md-3"
+                                href="https://niua.in/"><span>NIUA</span></a>
+                            <a target="_blank" class="pb-4 text-dark col-12 col-sm-6 col-md-6"
+                                href="https://niua.org/cdg/"><span>Centre
+                                    for
+                                    Digital Governance</span></a>
+                            <a target="_blank" class="pb-4 text-dark col-12 col-sm-6 col-md-3" href="#"><span>Contact
+                                    Us</span></a>
+                            <a class="pb-4 text-dark col-12 col-sm-6 col-md-3" href="https://mohua.gov.in"
+                                target="_blank"><span>MoHUA</span></a>
+                            <a target="_blank" class="pb-4 text-dark col-12 col-sm-6 col-md-6"
+                                href="https://nudm.mohua.gov.in/"><span>National
+                                    Urban Digital Mission</span></a>
+                            <a class="pb-4 text-dark col-12 col-sm-6 col-md-3" target="_blank"
+                                href="/learnathon.html"><span>Learnathon</span></a>
                         </div>
-                        <div class="col-12 col-lg-4">
-                            <div class="footer-right">
-                                <h4 class="mb-3">Anchor Institute:</h4>
-                                <div class="mt-4 mt-md-0 ">
-                                    <p class="">Ministry of Housing and Urban Affairs, Government of India Nirman
-                                        Bhawan,
-                                        New Delhi- 110001, INDIA</p>
-                                    <div class="footer-right">
-                                        <h4 class="mb-3 mt-5">Nodal Ministry:</h4>
-                                        <p class="">Ministry of Housing and Urban Affairs, Government of India</p>
-                                        <p class="">Nirman Bhawan, New Delhi- 110001, INDIA</p>
-                                        <p class=""> 1st Floor, Core 4B, India Habitat Centre, Lodhi Road, New Delhi -
-                                            110003, INDIA
-                                        </p>
-                                        <p class="">Phone: (+91 11) 24617517, 24617543, 24617595</p>
-                                    </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="footer-right">
+                            <h4 class="mb-3">Anchor Institute:</h4>
+                            <div class="mt-4 mt-md-0 ">
+                                <p class="">Ministry of Housing and Urban Affairs, Government of India Nirman
+                                    Bhawan,
+                                    New Delhi- 110001, INDIA</p>
+                                <div class="footer-right">
+                                    <h4 class="mb-3 mt-5">Nodal Ministry:</h4>
+                                    <p class="">Ministry of Housing and Urban Affairs, Government of India</p>
+                                    <p class="">Nirman Bhawan, New Delhi- 110001, INDIA</p>
+                                    <p class=""> 1st Floor, Core 4B, India Habitat Centre, Lodhi Road, New Delhi -
+                                        110003, INDIA
+                                    </p>
+                                    <p class="">Phone: (+91 11) 24617517, 24617543, 24617595</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sb-social d-flex justify-content-center justify-content-lg-start gap-3">
-                        <a href="https://www.facebook.com/people/National-Institute-of-Urban-Affairs/100068273286928/
+                </div>
+                <div class="sb-social d-flex justify-content-center justify-content-lg-start gap-3">
+                    <a href="https://www.facebook.com/people/National-Institute-of-Urban-Affairs/100068273286928/
                         " target="_blank"><i class="text-white social-icons bi bi-facebook"></i></a>
-                        <a href="https://instagram.com/niua_india?igshid=MzRlODBiNWFlZA==" target="_blank"><i
-                                class="text-white social-icons bi bi-instagram"></i></a>
-                        <a href="https://www.twitter.com/NIUA_India" target="_blank"><i
-                                class="text-white social-icons bi bi-twitter"></i></a>
-                        <a href="https://www.linkedin.com/school/national-institute-of-urban-affairs/"
-                            target="_blank"><i class="text-white social-icons bi bi-linkedin"></i></a>
-                    </div>
+                    <a href="https://instagram.com/niua_india?igshid=MzRlODBiNWFlZA==" target="_blank"><i
+                            class="text-white social-icons bi bi-instagram"></i></a>
+                    <a href="https://www.twitter.com/NIUA_India" target="_blank"><i
+                            class="text-white social-icons bi bi-twitter"></i></a>
+                    <a href="https://www.linkedin.com/school/national-institute-of-urban-affairs/" target="_blank"><i
+                            class="text-white social-icons bi bi-linkedin"></i></a>
                 </div>
             </div>
         </div>
@@ -717,27 +700,27 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="vendorowl/owlcarousel/owl.carousel.js"></script>
     <script>
-       document.addEventListener("DOMContentLoaded", () => {
- function counter(id, start, end, duration) {
-  let obj = document.getElementById(id),
-   current = start,
-   range = end - start,
-   increment = end > start ? 1 : -1,
-   step = Math.abs(Math.floor(duration / range)),
-   timer = setInterval(() => {
-    current += increment;
-    obj.textContent = current;
-    if (current == end) {
-     clearInterval(timer);
-    }
-   }, step);
- }
- counter("count1", 0, 10, 3000);
- counter("count2", 100, 449, 2500);
- counter("count3", 106000, 106421, 106425);
-});
+        document.addEventListener("DOMContentLoaded", () => {
+            function counter(id, start, end, duration) {
+                let obj = document.getElementById(id),
+                    current = start,
+                    range = end - start,
+                    increment = end > start ? 1 : -1,
+                    step = Math.abs(Math.floor(duration / range)),
+                    timer = setInterval(() => {
+                        current += increment;
+                        obj.textContent = current;
+                        if (current == end) {
+                            clearInterval(timer);
+                        }
+                    }, step);
+            }
+            counter("count1", 0, 10, 3000);
+            counter("count2", 100, 449, 3500);
+            counter("count3", 106000, 106421, 3500);
+        });
 
-     </script>
+    </script>
 
 
     <script>
