@@ -27,7 +27,7 @@
     border-radius: 50px;
     position: absolute;
     right: -70px;
-    top: 90px;
+    top: 130px;
     z-index: 2;
     width: 700px !important;
 }
@@ -92,7 +92,16 @@
         font-size: 30px;
     }
 }
-
+@media (min-width:1450px) {
+    .bg-photo img {
+        border-radius: 50px;
+        position: absolute;
+        right: -70px;
+        top: 130px;
+        z-index: 2;
+        width: 800px !important;
+    }
+}
 @media (min-width:1430px) {
     .main-head {
         font-size: 62px;
@@ -232,7 +241,7 @@
 }
 
 .work_img_wrapper_small {
-    border-radius: 10%;
+    border-radius: 15px;
     border: 4px solid black;
     width: 62%;
     height: 55%;
@@ -244,10 +253,10 @@
 }
 
 .work_img_wrapper_1 {
-    border-radius: 10%;
-    border: 4px solid black;
-    width: 62%;
-    height: 55%;
+    border-radius: 5%;
+    border: 5px solid black;
+    width: 67%;
+    height: 72%;
     position: absolute;
     top: 0;
     left: 0;
@@ -1489,4 +1498,30 @@
 
 .bg-img-cover2 img {
     height: 150px;
+}
+.testi-wrapper {
+    padding-right: 51px;
+}
+
+.testimo img {
+    border-radius: 10px 10px 0px 0px ;
+}
+/* .testimo h4{
+    margin-top: 15px;
+} */
+.testimo p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.testimo{
+    background-color: white;
+    border-radius: 10px;
+    height: 650px;
+}
+.testimonial-content{
+    padding: 38px 40px;
+}
+.br-15{
+    border-radius: 15px;
 }
