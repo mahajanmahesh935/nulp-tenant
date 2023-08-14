@@ -47,6 +47,7 @@
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
     <link rel="stylesheet" href="vendorowl/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="vendorowl/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 </head>
 
@@ -677,14 +678,15 @@
     <section id="gallery">
         <div class="ps-3 pe-3 ps-lg-5 pe-lg-5 partners">
             <div>
-                <h4 class="sb-se-title ">Gallery</h4>
+                <h4 class="sb-se-title">Gallery</h4>
             </div>
-            <div class="carousel gallery-carousel pt-3 pb-3 slick-slide-show-gallery">
-                <div class="slide"><img class="img-fluid" src="images/gallery1.jpg" alt=""></div>
-                <div class="slide"><img class="img-fluid" src="images/gallery2.jpg" alt=""></div>
-                <div class="slide"><img class="img-fluid" src="images/gallery3.jpg" alt=""></div>
-                <div class="slide"><img class="img-fluid" src="images/gallery4.jpg" alt=""></div>
-            </div>
+            <ul class="owl-carousel">
+                <li><a data-fancybox="gallery" href="images/Gallery1.jpg" data-caption="Caption1"><img class="imgsize" src="images/Gallery1.jpg" alt="01"></a></li>
+                <li><a data-fancybox="gallery" href="images/Gallery2.jpg" data-caption="Caption2"><img class="imgsize" src="images/Gallery2.jpg" alt="02"></a></li>
+                <li><a data-fancybox="gallery" href="images/Gallery3.jpg" data-caption="Caption3"><img class="imgsize" src="images/Gallery3.jpg" alt="03"></a></li>
+                <li><a data-fancybox="gallery" href="images/Gallery4.jpg" data-caption="Caption4"><img class="imgsize" src="images/Gallery4.jpg" alt="01"></a></li>
+               
+              </ul>
         </div>
     </section>
 
@@ -789,6 +791,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="vendorowl/owlcarousel/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             function counter(id, start, end, duration) {
@@ -1028,52 +1031,90 @@
 
 
 
-        $('.slick-slide-show-gallery').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            draggable: true,
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        infinite: true,
-                        dots: false,
-                        arrows: true,
-                    }
-                },
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        infinite: true,
-                        dots: false,
-                        arrows: true,
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: true,
-                        arrows: false
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: true,
-                        arrows: false
+        // $('.slick-slide-show-gallery').slick({
+        //     infinite: true,
+        //     slidesToShow: 3,
+        //     slidesToScroll: 3,
+        //     draggable: true,
+        //     responsive: [
+        //         {
+        //             breakpoint: 1200,
+        //             settings: {
+        //                 slidesToShow: 2,
+        //                 slidesToScroll: 2,
+        //                 infinite: true,
+        //                 dots: false,
+        //                 arrows: true,
+        //             }
+        //         },
+        //         {
+        //             breakpoint: 1024,
+        //             settings: {
+        //                 slidesToShow: 2,
+        //                 slidesToScroll: 2,
+        //                 infinite: true,
+        //                 dots: false,
+        //                 arrows: true,
+        //             }
+        //         },
+        //         {
+        //             breakpoint: 600,
+        //             settings: {
+        //                 slidesToShow: 1,
+        //                 slidesToScroll: 1,
+        //                 dots: true,
+        //                 arrows: false
+        //             }
+        //         },
+        //         {
+        //             breakpoint: 480,
+        //             settings: {
+        //                 slidesToShow: 1,
+        //                 slidesToScroll: 1,
+        //                 dots: true,
+        //                 arrows: false
+        //             }
+        //         }
+        //     ]
+        // });
+
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    },
+                    600:{
+                        items:3,
+                        nav:false
+                    },
+                    1000:{
+                        items:3,
+                        nav:true,
+                        loop:false
                     }
                 }
-            ]
-        });
+                })
+            });
+            
+            // fancybox customisation
+            $('[data-fancybox]').fancybox({
+                buttons: [
+                "zoom",
+                //"share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ],
+                protect: true,
+                preventCaptionOverlap: true,
+            });
 
         $('.slick-slide-show-partners').slick({
             infinite: true,
