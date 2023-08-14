@@ -1499,11 +1499,10 @@
 .bg-img-cover2 img {
     height: 150px;
 }
-.testi-wrapper {
-    padding-right: 51px;
-}
+
 
 .testimo img {
+    /* height: 250px; */
     border-radius: 10px 10px 0px 0px ;
 }
 /* .testimo h4{
@@ -1517,7 +1516,38 @@
 .testimo{
     background-color: white;
     border-radius: 10px;
-    height: 650px;
+    height: 750px;
+}
+@media (min-width:450px) {
+    .testimo{
+        height: 700px;
+    }
+}
+@media (min-width:576px) {
+    .testimo{
+        height: 650px;
+    }
+    
+}
+@media (min-width:768px) {
+    .testimo{
+        height: 740px;
+    }
+   
+}
+@media (min-width:1000px) {
+    .testimo{
+        height: 800px;
+    }
+   
+}
+@media (min-width:1200px) {
+    .testimo{
+        height: 750px;
+    }
+    .testi-wrapper {
+        padding-right: 50px;
+    }
 }
 .testimonial-content{
     padding: 38px 40px;
