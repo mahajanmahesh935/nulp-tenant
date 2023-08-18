@@ -53,6 +53,12 @@ header{
 .sb-baner-img2{
     background-image: url(../images/banner2.png) !important;
 }
+.sb-baner-img6{
+    background-image: url(../images/udcBanner.png) !important;
+    background-size: cover;
+    width: 100%;
+    background-position: right;
+}
 .sb-baner-img3{
     background-image: url(../images/NULP_Learnathon_.jpg) !important;
     background-size: cover;
@@ -278,7 +284,7 @@ header{
         font-size: 2vw;
     }
     .sb-baner p {
-        margin: 35px 0 33px;
+        margin: 22px 0 33px;
         color: #dff9fe;
     }
     .sm-none{
