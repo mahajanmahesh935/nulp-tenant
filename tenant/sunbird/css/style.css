@@ -291,7 +291,7 @@
 @media (min-width:992px) {
     .work-img {
         position: relative;
-        height: 500px;
+        height: 376px;
     }
 }
 
@@ -390,14 +390,11 @@
 .offer-items h1 {
     font-size: 59px;
     font-weight: bold;
-    font-family: 'Open Sans', sans-serif !important;
 
 }
 
 .offer-items p {
     font-size: 14px;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif !important;
 }
 
 .sb-se-title {
@@ -595,10 +592,10 @@
 
 .slick-center img {
     position: absolute;
-    top: -19px;
-    left: 124px !important;
-    width: 80px !important;
-    height: 80px !important;
+    top: -44px;
+    left: 88px !important;
+    width: 95px !important;
+    height: 95px !important;
     background: #fff;
 }
 
@@ -630,6 +627,9 @@
     .slick-list {
         padding: 32px 60px 20px !important;
     }
+    .sections-padding .slick-list{
+        padding: 84px 60px 20px !important;
+    }
 }
 
 .partners.slick-list {
@@ -650,11 +650,14 @@
 }
 
 .domain-box img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border: solid 2px #000;
     border-radius: 100%;
     margin: -8px 14px;
+    padding: 10px;
+    background: #fff;
+    object-fit: contain;
 }
 
 
@@ -955,15 +958,6 @@
     padding: 70px 0px;
 }
 
-.person_img {
-    border-radius: 50%;
-    width: 90px;
-    height: 88px;
-    border: 2px solid black;
-    position: relative;
-    bottom: 45px;
-    left: 0px;
-}
 
 .NULP_section h3 {
     font-size: 18px;
@@ -984,12 +978,6 @@
 
 }
 
-.person_img img {
-    border-radius: 50%;
-    width: 90px;
-    height: 85px;
-    object-fit: cover;
-}
 
 .certificates {
     width: 290px;
@@ -1052,16 +1040,16 @@
 
     }
 
-    .person_img {
+    /* .person_img {
         width: 100px;
         height: 100px;
         left: 6px;
-    }
+    } */
 
-    .person_img img {
+    /* .person_img img {
         width: 100px;
         height: 96px;
-    }
+    } */
 
     .Enrolled_para {
         font-size: 17px;
@@ -1071,11 +1059,24 @@
 }
 
 @media (min-width:1200px) {
+    .person_img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+    }
+    
+    .person_img img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
     .certificates {
         width: 450px;
     }
 
-    .person_img {
+    /* .person_img {
         width: 130px;
         height: 120px;
         bottom: 45px;
@@ -1084,7 +1085,7 @@
     .person_img img {
         width: 128px;
         height: 117px;
-    }
+    } */
 
     .Enrolled_para {
         font-size: 13px;
@@ -1269,6 +1270,21 @@
     top: 0;
     transform: rotateZ(180deg);
 }
+@media (min-width:320px) {
+    .person_img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+    }
+    
+    .person_img img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+}
 
 @media (min-width:427px) {
 
@@ -1276,6 +1292,7 @@
     .gallery-carousel::after {
         height: 370px;
     }
+    
 }
 
 @media (min-width:525px) {
@@ -1291,6 +1308,19 @@
     .gallery-carousel::before,
     .gallery-carousel::after {
         height: 290px;
+    }
+    .person_img {
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        border: 2px solid black;
+    }
+    
+    .person_img img {
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
     }
 }
 
@@ -1588,4 +1618,24 @@ ul{
     border-radius: 20px;
     font-size: 25px !important;
     line-height: 18px !important;
+}
+@media (max-width:768px){
+    .sm-mx-auto{
+        margin: 0 auto;
+    }
+}
+@media  only screen and (min-device-width:992px) and (max-device-width:1024px){
+    .person_img {
+        border-radius: 50%;
+        width: 90px !important;
+        height: 90px;
+        border: 2px solid black;
+    }
+    .person_img img {
+        border-radius: 50%;
+        width: 90px !important;
+        height: 90px;
+        object-fit: cover;
+    }
+    
 }
