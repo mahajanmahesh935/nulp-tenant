@@ -654,7 +654,7 @@
     height: 80px;
     border: solid 2px #000;
     border-radius: 100%;
-    margin: -8px 14px;
+    margin: -8px 30px;
     padding: 10px;
     background: #fff;
     object-fit: contain;
@@ -1270,21 +1270,6 @@
     top: 0;
     transform: rotateZ(180deg);
 }
-@media (min-width:320px) {
-    .person_img {
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        border: 2px solid black;
-    }
-    
-    .person_img img {
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-    }
-}
 
 @media (min-width:427px) {
 
@@ -1310,19 +1295,35 @@
         height: 290px;
     }
     .person_img {
-        border-radius: 50%;
-        width: 90px;
-        height: 90px;
+        border-radius: 100%;
+        width: 90px !important;
+        height: 90px !important;
         border: 2px solid black;
     }
     
     .person_img img {
         border-radius: 50%;
-        width: 90px;
-        height: 90px;
+        width: 90px !important;
+        height: 90px !important;
         object-fit: cover;
     }
 }
+@media (min-width:320px) {
+    .person_img {
+        border-radius: 50%;
+        width: 150px !important;
+        height: 150px !important;
+        border: 2px solid black;
+    }
+    
+    .person_img img {
+        border-radius: 50%;
+        width: 147px !important;
+        height: 147px !important;
+        object-fit: cover;
+    }
+}
+
 
 @media (min-width:740px) {
 
@@ -1494,6 +1495,9 @@
         position: absolute;
         left: 250px;
         bottom: -47%;
+    }
+    .bl-white{
+        border-left: solid 1px #efecec;
     }
 }
 
