@@ -128,13 +128,13 @@
                             </div>
                         </div>
                         <div class="bg-photo d-none d-xl-block">
-                            <img src="images/newNULPBannerImage.jpg" alt="banner">
+                            <img src="images/newNULPBannerImage.jpeg" alt="banner" class="w-562">
                         </div>
                         <div class="behind-photo d-none d-xl-block"></div>
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item">  
                 <div class="main-wrapper w-100" style="height: 580px;">
                     <div class="row">
                         <div class="green-bg col-12 col-xl-9">
@@ -149,12 +149,12 @@
                             </div>
                         </div>
                         <div class="bg-photo d-none d-xl-block">
-                            <img src="images/newNULPBannerImage.jpg" width="700px" alt="banner home page">
+                            <img src="images/newNULPBannerImage.jpeg" alt="banner home page" class="w-562">
                         </div>
                         <div class="behind-photo d-none d-xl-block"></div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
 
@@ -383,7 +383,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="col-12 col-md-6" style="border-left: solid 1px #efecec;">
+                                    <div class="col-12 col-md-6 bl-white">
                                         <div class="testi-carousel testimonials row">
                                             <div class="col-12 col-md-4 col-lg-3">
 
@@ -635,12 +635,13 @@
             <div>
                 <h4 class="sb-se-title">Gallery</h4>
             </div>
-            <ul class="owl-carousel">
-                <li><a data-fancybox="gallery" href="images/gallery1.jpg" data-caption="Caption1"><img class="imgsize" src="images/gallery1.jpg" alt="01"></a></li>
-                <li><a data-fancybox="gallery" href="images/gallery2.jpg" data-caption="Caption2"><img class="imgsize" src="images/gallery2.jpg" alt="02"></a></li>
-                <li><a data-fancybox="gallery" href="images/gallery3.jpg" data-caption="Caption3"><img class="imgsize" src="images/gallery3.jpg" alt="03"></a></li>
-                <li><a data-fancybox="gallery" href="images/gallery4.jpg" data-caption="Caption4"><img class="imgsize" src="images/gallery4.jpg" alt="01"></a></li>
-               
+            <ul class="owl-carousel owl-theme">
+                <li><a data-fancybox="gallery" href="images/gallery1.png" data-caption="Caption1"><img class="imgsize" src="images/gallery1.png" alt="01"></a></li>
+                <li><a data-fancybox="gallery" href="images/gallery2.png" data-caption="Caption2"><img class="imgsize" src="images/gallery2.png" alt="02"></a></li>
+                <li><a data-fancybox="gallery" href="images/gallery3.png" data-caption="Caption3"><img class="imgsize" src="images/gallery3.png" alt="03"></a></li>
+                <li><a data-fancybox="gallery" href="images/gallery4.png" data-caption="Caption4"><img class="imgsize" src="images/gallery4.png" alt="01"></a></li>
+                <li><a data-fancybox="gallery" href="images/gallery5.png" data-caption="Caption4"><img class="imgsize" src="images/gallery5.png" alt="01"></a></li>
+
               </ul>
         </div>
     </section>
@@ -1028,11 +1029,13 @@
             $(".owl-carousel").owlCarousel({
                 loop:true,
                 margin:10,
-                responsiveClass:true,
                 responsive:{
                     0:{
                         items:1,
-                        nav:true
+                        nav:false,
+                        dots: true,
+                        loop:true,
+                       
                     },
                     600:{
                         items:3,
