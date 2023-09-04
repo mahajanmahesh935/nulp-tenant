@@ -1588,6 +1588,9 @@
     .imgsize{
         width: 400px !important;
     }
+    .height-302{
+        height: 302px;
+    }
 }
 ul{
     list-style: none;
@@ -1607,7 +1610,7 @@ ul{
     color: #fff !important;
     width: 20px;
     height: 20px;
-    border-radius: 20px;
+    border-radius: 20px !important;
     font-size: 25px !important;
     line-height: 18px !important;
 }
@@ -1619,7 +1622,7 @@ ul{
     color: #fff !important;
     width: 20px;
     height: 20px;
-    border-radius: 20px;
+    border-radius: 20px !important;
     font-size: 25px !important;
     line-height: 18px !important;
 }
