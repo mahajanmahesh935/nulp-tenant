@@ -12,6 +12,18 @@ $(document).ready(function () {
 			location.href = "/explore-course/1?key=" + $("#site-search").val().trim();
 		}
 	});
+	$('#site-search-1').on("keypress", function (event) {
+		if (event.key === "Enter") {
+			event.preventDefault();
+			$("#site-search-btn-1").click();
+		}
+	});
+
+	$("#site-search-btn-1").click(function () {
+		if ($("#site-search-1").val().trim() != '') {
+			location.href = "/explore-course/1?key=" + $("#site-search-1").val().trim();
+		}
+	});
 });
 
 // national urban learning platform slide
