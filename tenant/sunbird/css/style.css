@@ -1635,13 +1635,13 @@ ul{
     .person_img {
         border-radius: 50%;
         width: 90px !important;
-        height: 90px;
+        height: 90px !important;
         border: 2px solid black;
     }
     .person_img img {
         border-radius: 50%;
         width: 90px !important;
-        height: 90px;
+        height: 90px !important;
         object-fit: cover;
     }
     
@@ -1649,3 +1649,26 @@ ul{
 .w-562{
     width: 562px !important;
 }
+
+.sb-social a{
+    background: #000;
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sb-social .fa{
+   color:#fff !important;
+   font-size: 22px !important;
+}
+
+.sb-social a:hover{
+    background: #fff; 
+}
+
+.sb-social a:hover .fa{
+    color:#000 !important;
+    font-size: 22px !important;
+ }
