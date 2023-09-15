@@ -83,6 +83,9 @@ header{
 .sb-baner-img4{
     background-image: url(../images/banner3.jpg) !important;
 }
+.sb-baner-img8{
+    background-image: url(../images/banner8.png) !important;
+}
 .sb-baner .banner-cover{
     padding-top: 70px;
 }
