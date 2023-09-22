@@ -1309,7 +1309,9 @@ h5,
 .ui.grid>.row.sb-h-center {
     align-items: center;
 }
-
+.main-nav{
+    padding-top: 2.4rem !important;
+}
 .ui.grid.sb-partner {
     padding: 35px 50px;
 }
@@ -2958,9 +2960,11 @@ section img {
 
 .maintainence-msg {
     background-color: #FFC142;
-    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    color: #b60000;
     width: 100%;
-    padding: 0.5% 20%;
+    padding: 1% 20%;
     position: fixed;
     top: 0;
     overflow: hidden;
