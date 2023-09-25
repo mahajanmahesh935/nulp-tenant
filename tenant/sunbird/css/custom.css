@@ -479,7 +479,7 @@ header {
     .sb-baner {
         /* padding: 548px 0 750px 110px !important; */
         height: 659px;
-        margin-top: 195px
+        margin-top: 160px
     }
 
     /* .sb-baner h2{
@@ -1309,9 +1309,9 @@ h5,
 .ui.grid>.row.sb-h-center {
     align-items: center;
 }
-.main-nav{
+/* .main-nav{
     padding-top: 2.4rem !important;
-}
+} */
 .ui.grid.sb-partner {
     padding: 35px 50px;
 }
