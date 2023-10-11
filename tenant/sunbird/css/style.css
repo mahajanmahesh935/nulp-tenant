@@ -1617,7 +1617,7 @@ ul{
 .owl-next{
     position: absolute;
     top: 114px;
-    right: 0;
+    right: -28px;
     background: #0a0a0a !important;
     color: #fff !important;
     width: 20px;
