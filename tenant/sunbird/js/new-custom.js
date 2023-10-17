@@ -212,7 +212,7 @@ $('.slick-slide-show-domain').slick({
 $(document).ready(function(){
 	$(".owl-carousel").owlCarousel({
 		loop:true,
-		margin:10,
+		margin:3,
 		responsive:{
 			0:{
 				items:1,
@@ -359,11 +359,11 @@ $(function () {
 										<div class="d-flex fw-bold pt-lg-5 mt-4 justify-content-end px-15">
 											${value.se_boards[0]}
 										</div>
-										<div class="px-15 pb-3">
+										 <div class="px-15 pb-3">
 											<div class="fw-bold truncate header py-15" title="${value.name}">${_.capitalize(value.name)}</div>
 											<div class="truncate">${value.organisation[0]}</div>
 											<!--div>Tags/ Keywords</div-->
-										</div>
+										</div> 
 									</div>
 								</div>
 							</div>
@@ -442,7 +442,7 @@ const typeWriter = () => {
 	setTimeout(() => typeWriter(), 200);
 }
 
-typeWriter();
+// typeWriter();
 
 let title2 = document.querySelector('.secondWord');
 let name2 = "Collaboration";

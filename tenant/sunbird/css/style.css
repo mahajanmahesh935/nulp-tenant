@@ -3,7 +3,6 @@
 * {
     padding: 0;
     margin: 0;
-    /* border: 1px solid black; */
 }
 
 .green-bg {
@@ -1040,17 +1039,6 @@
 
     }
 
-    /* .person_img {
-        width: 100px;
-        height: 100px;
-        left: 6px;
-    } */
-
-    /* .person_img img {
-        width: 100px;
-        height: 96px;
-    } */
-
     .Enrolled_para {
         font-size: 17px;
         line-height: 22px;
@@ -1477,12 +1465,14 @@
 @media (min-width:576px) {
     .nulp-works img {
         width: 300px;
+        height: auto;
     }
 }
 
 @media (min-width:992px) {
     .nulp-works img {
         width: 400px;
+        height: auto;
     }
 
     .nulp-search {
@@ -1504,14 +1494,10 @@
 @media (min-width:1500px) {
     .nulp-works img {
         width: 500px;
+        height: auto;
     }
 }
 
-/* @media (min-width:1800px) {
-    .nulp-works img {
-        width: 600px;
-    }
-} */
 .nulp-search-Content {
     width: 200px;
 }
@@ -1536,12 +1522,9 @@
 
 
 .testimo img {
-    /* height: 250px; */
     border-radius: 10px 10px 0px 0px ;
 }
-/* .testimo h4{
-    margin-top: 15px;
-} */
+
 .testimo p {
     text-align: justify;
     font-size: 18px;
@@ -1550,36 +1533,10 @@
 .testimo{
     background-color: white;
     border-radius: 10px;
-    /* height: 750px; */
 }
 	.owl-stage {
 		display: flex;
 	}
-	
-	
-/* @media (min-width:450px) {
-    .testimo{
-        height: 700px;
-    }
-}
-@media (min-width:576px) {
-    .testimo{
-        height: 650px;
-    }
-    
-}
-@media (min-width:768px) {
-    .testimo{
-        height: 740px;
-    }
-   
-}
-@media (min-width:1000px) {
-    .testimo{
-        height: 800px;
-    }
-   
-} */
 @media (min-width:1200px) {
    
     .testi-wrapper {
