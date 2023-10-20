@@ -47,13 +47,16 @@ $('#testimonial-carousel').owlCarousel({
 	// nav: true,
 	responsive: {
 		0: {
-			items: 1
+			items: 1,
+			nav:false,
+			dots: true,
+			loop:true
 		},
 		768: {
-			items: 1
+			items: 2
 		},
 		1000: {
-			items: 1
+			items: 2
 		}
 	}
 })
@@ -212,7 +215,7 @@ $('.slick-slide-show-domain').slick({
 $(document).ready(function(){
 	$(".owl-carousel").owlCarousel({
 		loop:true,
-		margin:3,
+		margin:1,
 		responsive:{
 			0:{
 				items:1,
@@ -222,7 +225,7 @@ $(document).ready(function(){
 			   
 			},
 			600:{
-				items:3,
+				items:2,
 				nav:false
 			},
 			1000:{
