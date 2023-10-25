@@ -100,6 +100,16 @@ body{
     .s-head span {
         font-size: 40px;
     }
+    .slick-slide-show-discussion .slick-prev{
+        left: -9px !important;
+    }
+    .slick-slide-show-discussion .slick-next{
+        right:0 !important;
+    }
+    .slick-slide-show-discussion .slick-slider{
+        padding: 0 50px !important;
+    }
+
 }
 
 @media (min-width:992px) {
@@ -255,7 +265,7 @@ body{
 }
 
 .single-info p {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .nulp-work {
@@ -431,7 +441,7 @@ body{
 }
 
 .offer-items p {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .sb-se-title {
@@ -954,6 +964,7 @@ body{
     border-radius: 100%;
     top: 91px;
     background-color: #fff;
+    object-fit: cover;
 }
 
 
@@ -1613,7 +1624,7 @@ ul{
 .owl-next{
     position: absolute;
     top: 114px;
-    right: -28px;
+    right: 7px;
     background: #0a0a0a !important;
     color: #fff !important;
     width: 20px;
@@ -1640,6 +1651,9 @@ ul{
         position: absolute;
         left: 25px;
         top: -310px;
+    }
+    .nulp-wrapper{
+        display: none;
     }
 }
 @media  only screen and (min-device-width:992px) and (max-device-width:1024px){
@@ -1700,4 +1714,12 @@ ul{
 }
 .pr-2{
     padding-right: 10px;
+}
+
+#gallery .owl-carousel{
+    padding: 0 55px;
+}
+
+.small-bow{
+    height: 190px;
 }

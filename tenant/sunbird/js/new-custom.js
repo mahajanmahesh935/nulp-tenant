@@ -215,7 +215,7 @@ $('.slick-slide-show-domain').slick({
 $(document).ready(function(){
 	$(".owl-carousel").owlCarousel({
 		loop:true,
-		margin:1,
+		margin:8,
 		responsive:{
 			0:{
 				items:1,
@@ -356,7 +356,7 @@ $(function () {
 									</div>
 									<div class="small-bow">
 										<a class="slider_info" href="#">
-											<img class=" card_Circle" src=${value.appIcon} alt=${value.name} width="305px" />
+											<img class=" card_Circle" src="assets/images/book.png" alt=${value.name} width="305px" />
 										</a>
 										<input type="hidden" value=${value.identifier} />
 										<div class="d-flex fw-bold pt-lg-5 mt-4 justify-content-end px-15">
