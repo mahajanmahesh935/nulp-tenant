@@ -1743,3 +1743,7 @@ ul{
 .mt-45px{
     margin-top: 45px;
 }
+
+.partners .owl-theme .owl-nav .disabled{
+    opacity: 1 !important;
+}

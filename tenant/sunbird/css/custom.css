@@ -130,6 +130,10 @@ header {
     left: 95px;
     top: 124px;
 }
+.owl-prev.disabled{
+    background: #000 !important;
+    opacity: 0 !important;
+}
 
 .owl-next span {
     color: #064066;
@@ -1942,7 +1946,7 @@ section img {
     font-size: 92px;
     position: absolute;
     left: 95px;
-    top: 124px;
+    top: 90px;
 }
 
 .owl-next span {
@@ -1950,7 +1954,7 @@ section img {
     font-size: 92px;
     position: absolute;
     right: 132px;
-    top: 124px;
+    top: 90px;
 }
 
 .total-section {
