@@ -761,7 +761,7 @@ body{
     background-color: #fff;
     padding: 20px 15px;
     margin: 10px 0 !important;
-    font-size: 1.3em;
+    font-size: 16px;
     width: 365px;
     /* width: 400px !important;
     height: 335px !important; */
@@ -1721,5 +1721,9 @@ ul{
 }
 
 .small-bow{
-    height: 190px;
+    height: 145px;
+}
+
+.display-4{
+    font-weight: 600 !important;
 }
