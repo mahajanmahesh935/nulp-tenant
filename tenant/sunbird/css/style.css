@@ -1727,3 +1727,19 @@ ul{
 .display-4{
     font-weight: 600 !important;
 }
+
+.maintainence-msg {
+    background-color: #FFC142;
+    font-size: 17px;
+    font-weight: 600;
+    color: #b60000;
+    width: 100%;
+    padding: 6px 10px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+.mt-45px{
+    margin-top: 45px;
+}
