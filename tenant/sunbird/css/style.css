@@ -724,6 +724,9 @@ body{
     width: 100% !important;
     height: 100%;
     object-fit: cover;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+
 }
 
 .card-bottom-img {
@@ -752,6 +755,9 @@ body{
     margin: 10px 0 !important;
     /* box-shadow: 0.375rem 0.375rem 0.125rem 0 rgba(0, 0, 0, 0.1); */
     font-size: 1.3em;
+    border: solid 7px #fff !important;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
 }
 
 .ui2.card2 {
@@ -765,6 +771,9 @@ body{
     width: 365px;
     /* width: 400px !important;
     height: 335px !important; */
+    border: solid 7px #fff !important;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
 }
 
 
@@ -964,21 +973,22 @@ body{
     border-radius: 100%;
     top: 91px;
     background-color: #fff;
-    object-fit: cover;
+    object-fit: contain;
+    padding: 10px;
 }
 
 
 @media (min-width:992px) {
     .card_Circle {
         width: 102px !important;
-        height: 102px !important;
+        height: 103px !important;
     }
 }
 
 .ui.card {
     width: 365px !important;
     font-size: 16px;
-    height: 400px;
+    height: 356px;
 }
 
 
@@ -1721,7 +1731,7 @@ ul{
 }
 
 .small-bow{
-    height: 145px;
+    height: 130px;
 }
 
 .display-4{

@@ -380,7 +380,7 @@ $(function () {
 			$("#popularCourseSection").on("click", ".small-bow", function () {
 				location.href = '/explore-course/course/' + $(this).find('input').val();
 			});
-			$('#popularCourseSection').slick({
+			$('.course').slick({
 				infinite: true,
 				slidesToShow: 3.5,
 				slidesToScroll: 3,
