@@ -1799,31 +1799,3 @@ ul {
 .partners .owl-theme .owl-nav .disabled {
     opacity: 1 !important;
 }
-
-.needHelp_Btn {
-    position: absolute;
-    left: 65px;
-    bottom: 195px !important;
-}
-
-.needHelp_Btn a {
-    text-decoration: none;
-    bottom: 195px;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    background-color: #004367;
-    color: white !important;
-    padding: 15px;
-    border-radius: 30px;
-    /* border: 3px solid black; */
-}
-
-.needHelp_LightBtn {
-    bottom: 140px !important;
-}
-
-.needHelp_LightBtn a {
-    background-color: #9fe1d3;
-    color: black !important;
-}
