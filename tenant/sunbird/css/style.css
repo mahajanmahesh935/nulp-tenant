@@ -813,6 +813,13 @@ body {
     padding-bottom: 40px;
 }
 
+.purple-bg {
+    background-color: #622BCF;
+    padding-top: 50px;
+    height: 470px;
+    padding-bottom: 40px;
+}
+
 .main-wrapper {
     position: relative;
     overflow-x: hidden;
@@ -829,6 +836,10 @@ body {
     right: -66px;
     top: 90px;
     z-index: 2;
+}
+
+.bgThird-photo img{
+    right: -36px !important;
 }
 
 .s-head {
