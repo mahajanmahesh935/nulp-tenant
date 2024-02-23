@@ -35,7 +35,7 @@ node('build-slave') {
 
             stage('Build') {
                 // values = docker_params()
-                if (params.build_number == "") {
+                if (params.build_number == "434") {
                     println(ANSI_BOLD + ANSI_YELLOW + "Setting build_number to lastSuccessfulBuild to copy metadata.json" + ANSI_NORMAL)
                     buildNumber = "lastSuccessfulBuild"
                 } else
