@@ -825,6 +825,15 @@ body {
     height: 550px;
     padding-bottom: 40px;
 }
+.orange-bg {
+    padding-bottom: 40px;
+    background-color: #e28741 !important;
+    padding-top: 48px;
+    height: 522px;
+}
+.bggender-photo img {
+    right: -15px !important;
+}
 
 @media (min-width:992px) {
     .red-bg {
@@ -1756,6 +1765,27 @@ ul {
 
 .w-562 {
     width: 562px !important;
+}
+.fs-30{
+    font-size: 22px !important;
+}
+.sb-baner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    box-shadow: none;
+    position: relative;
+}
+
+.sb-baner-img {
+    border-top: solid 12px #74a951;
+    border-right: solid 12px #74a951;
+    border-right-style: solid;
+    border-right-color: #74a951;
+    border-top-right-radius: 50px;
+    background-image: url(../images/orange.png) !important;
+    height: 522px;
 }
 
 .sb-social a {
