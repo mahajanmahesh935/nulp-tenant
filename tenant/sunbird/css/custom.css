@@ -604,6 +604,12 @@ header {
 }
 
 @media (max-width:768px) {
+    .padding-50{
+        padding:0px !important;
+      }
+      .w-80{
+        width: 100% !important;
+      }
 
     .sb-search-btn input {
         padding: 13px 0 0 17px;
@@ -1786,6 +1792,7 @@ section img {
     overflow: hidden;
     width: 100%;
     padding: 56.25% 42px 0;
+    z-index: 1;
 }
 
 .responsive-iframe {
@@ -1930,7 +1937,7 @@ section img {
 .learn-btn {
     display: inline-block;
     padding: 17px 24px;
-    background: #990000;
+    background: #009499;
     text-decoration: none;
     color: #fff;
     font-weight: 700;
@@ -1979,7 +1986,7 @@ section img {
     font-size: 84px;
     line-height: 140%;
     text-align: center;
-    color: #990000;
+    color:#00878C;
 }
 
 .num-cont {
@@ -2040,7 +2047,7 @@ section img {
 
 .bg-blue {
     margin-top: 60px;
-    background-color: #011F5B;
+    background-color:#00878C;
     padding: 100px 0;
 }
 
@@ -2061,7 +2068,7 @@ section img {
 
 .bg-yellow1 {
     background-color: #FFC142;
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .participate-tit {
@@ -2209,12 +2216,10 @@ section img {
     display: inline-block;
     margin: 10px 10px 10px 0;
     padding: 20px 12px;
-    width: 326px;
+    width: 400px;
     height: 61px;
-    background: rgba(153, 0, 0, 0.6);
+    background:#009499ab;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -2417,7 +2422,7 @@ section img {
 }
 
 .bg-blue1 {
-    background-color: #011F5B;
+    background-color:#054365;
     padding: 70px 0;
 }
 
@@ -2615,6 +2620,7 @@ section img {
 }
 
 @media (max-width:769px) {
+
     .learnathon-video {
         width: 100%;
     }
@@ -2923,7 +2929,7 @@ section img {
 }
 
 .ui.menu .ui.dropdown .menu>.item:hover {
-    background: #990000 !important;
+    background:#009499 !important;
     color: #fff !important;
 }
 
@@ -2972,4 +2978,27 @@ section img {
     position: absolute;
     top: 0;
     overflow: hidden;
+}
+/*learnathon 2024 UI css*/
+  .padding-50{
+    padding:50px;
+  }
+  .w-80{
+    width: 80%;
+  }
+  .bg-Cyan {
+    background-color:#0097B2;
+    padding: 100px 0;
+}
+.bg-aqua-island {
+    background-color:#ACDADD;
+    padding: 100px 0;
+}
+.underline-bc2 {
+    width: 34px;
+    height: 4px;
+    background: #000;
+}
+.text-black{
+    color:#000 !important;
 }
