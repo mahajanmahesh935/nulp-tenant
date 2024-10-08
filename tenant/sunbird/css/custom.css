@@ -610,6 +610,12 @@ header {
       .w-80{
         width: 100% !important;
       }
+    .padding-50{
+        padding:0px !important;
+      }
+      .w-80{
+        width: 100% !important;
+      }
 
     .sb-search-btn input {
         padding: 13px 0 0 17px;
@@ -1781,7 +1787,7 @@ section img {
 
 .learn-section {
     padding: 0 42px !important;
-    margin-top: 2.8rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     gap: 50px;
@@ -2330,17 +2336,17 @@ section img {
 }
 
 .slider-img1 {
-    background-image: url("./../images/water-slider.jpg");
+    background-image: url("./../images/environment-and-climate.png");
 
 }
 
 .slider-img2 {
-    background-image: url("./../images/environmentandclimate1234.jpg");
+    background-image: url("./../images/GeneralAdministration.png");
 
 }
 
 .slider-img3 {
-    background-image: url("./../images/sai-abhinives.png");
+    background-image: url("./../images/urban-management.png");
 
 }
 
@@ -2350,32 +2356,32 @@ section img {
 }
 
 .slider-img5 {
-    background-image: url("./../images/DataGovernanceandAnalytics.png");
-
-}
-
-.slider-img6 {
-    background-image: url("./../images/Urbane-governance.png");
-
-}
-
-.slider-img7 {
     background-image: url("./../images/SocialAspects.png");
 
 }
 
-.slider-img8 {
+.slider-img6 {
+    background-image: url("./../images/solid-Waste-management.png");
+
+}
+
+.slider-img7 {
     background-image: url("./../images/mobility.png");
 
 }
 
+.slider-img8 {
+    background-image: url("./../images/town-planning.png");
+
+}
+
 .slider-img9 {
-    background-image: url("./../images/GeneralAdministration.png");
+    background-image: url("./../images/Wash.png");
 
 }
 
 .slider-img10 {
-    background-image: url("./../images/town-planning.png");
+    background-image: url("./../images/miscellaneous.png");
 
 }
 
@@ -2905,19 +2911,26 @@ section img {
 }
 
 .identive-theme {
-    color: #fff;
     padding: 10px 0;
+    color:#011F5B;
 }
-
+.homepage .identive-theme {
+    padding: 10px 0;
+    color:#fff;
+}
 .dropdown .icon {
     display: none !important;
 }
 
 .cenrre .icon1 {
-    fill: #fff !important;
     position: absolute;
 }
 
+
+.cenrre1 .icon1 {
+    position: absolute;
+    fill: #fff !important;
+}
 .cenrre .icon2 {
     position: absolute;
 }
@@ -2928,6 +2941,11 @@ section img {
     color: #fff !important;
 }
 
+
+.homepage .identive-theme {
+    padding: 10px 0;
+    color:#fff;
+}
 .ui.menu .ui.dropdown .menu>.item:hover {
     background:#009499 !important;
     color: #fff !important;
@@ -3001,4 +3019,7 @@ section img {
 }
 .text-black{
     color:#000 !important;
+}
+.fw-bold{
+    font-weight: bold;
 }
