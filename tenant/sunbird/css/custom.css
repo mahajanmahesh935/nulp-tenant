@@ -616,6 +616,12 @@ header {
       .w-80{
         width: 100% !important;
       }
+    .padding-50{
+        padding:0px !important;
+      }
+      .w-80{
+        width: 100% !important;
+      }
 
     .sb-search-btn input {
         padding: 13px 0 0 17px;
@@ -2054,7 +2060,7 @@ section img {
 .bg-blue {
     margin-top: 60px;
     background-color:#00878C;
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .max-width {
@@ -2384,7 +2390,39 @@ section img {
     background-image: url("./../images/miscellaneous.png");
 
 }
-
+.slider-img11 {
+    background-image: url("./../images/winning-entries/Greener-Kedarnath.png");
+}
+.slider-img12 {
+    background-image: url("./../images/winning-entries/Baini-Sena-Haldwani.png");
+}
+.slider-img13 {
+    background-image: url("./../images/winning-entries/Solar-Revolution-Chandigarh.png");
+}
+.slider-img14 {
+    background-image: url("./../images/winning-entries/ICCC-New-Town-Kolkata.png");
+}
+.slider-img15 {
+    background-image: url("./../images/winning-entries/Silvasa-Cycling-Initiative.png");
+}
+.slider-img16 {
+    background-image: url("./../images/winning-entries/Transforming-Green-Spaces-Sagar.png");
+}
+.slider-img17 {
+    background-image: url("./../images/winning-entries/Working-Women-Hostel-sagar.png");
+}
+.slider-img18 {
+    background-image: url("./../images/winning-entries/Harit-Bagiya-Anupgarh-ki.png");
+}
+.slider-img19 {
+    background-image: url("./../images/winning-entries/Anjar-Wastewater-Treatment-Project.png");
+}
+.slider-img20 {
+    background-image: url("./../images/winning-entries/MPSeDC.png");
+}
+.slider-img21 {
+    background-image: url("./../images/winning-entries/Reimagining-Water-Supply-Alnawar-Initiative.png");
+}
 .mt---8 {
     margin-top: -8px !important;
 }
@@ -3023,3 +3061,71 @@ section img {
 .fw-bold{
     font-weight: bold;
 }
+.title4{
+    color:#fff;
+    text-align: center;
+    font-size:45px;
+    font-family: 'EB Garamond';
+    font-weight: 400;
+    position:relative;
+}
+.title4::before{
+    content: "";
+    width: 106px;
+    height: 4px;
+    left: 45%;
+    top: 100%;
+    background: #fff;
+    margin: 0 42px;
+    position: absolute;
+}
+div#owl-demo18 {
+    margin-top: 4%;
+}
+
+.title5{
+    color:#fff;
+    text-align: center;
+    font-size:45px;
+    font-family: 'EB Garamond';
+    font-weight: 400;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .slider-btn2{
+    padding: 8px 5px 8px 25px;
+    background: #FFC142;
+    font-family: 'EB Garamond';
+    
+}
+.slider-btn2 p{
+    font-style: italic;
+    font-size: 19px;
+    margin-bottom: -23px;
+    font-weight: 100 !important;
+    }
+  .slider-btn2 h2{
+    font-style: normal;
+    font-size: 36px;
+    color: #000000;
+    font-weight: 100 !important;
+}
+.btn-fixed1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.transparant-btn{
+    background: #ffffff82;
+    font-family: 'EB Garamond';
+}
+.transparant-btn h3 {
+    padding: 18px 10px 21px 22px;
+    color: #000000;
+    font-weight: 400;
+    line-height: 25px;
+}
+
