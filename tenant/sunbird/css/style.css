@@ -827,6 +827,8 @@ body {
     padding-bottom: 40px;
 }
 
+
+
 .red-bg {
     background-color: #C24847 !important;
     padding-top: 20px;
@@ -837,6 +839,13 @@ body {
 .green-bg1 {
     background-color: #74a951 !important;
     padding-top: 60px;
+    height: 550px;
+    padding-bottom: 40px;
+}
+
+.blue-bg1 {
+    background-color: #195570 !important;
+    padding-top: 20px;
     height: 550px;
     padding-bottom: 40px;
 }
@@ -857,6 +866,17 @@ body {
         padding-top: 50px;
         height: 520px;
     }
+
+    .green-bg1 {
+        padding-top: 50px;
+        height: 520px;
+    }
+
+    .blue-bg1 {
+        padding-top: 50px;
+        height: 520px;
+    }
+
 
     .blue-bg {
         padding-top: 50px;

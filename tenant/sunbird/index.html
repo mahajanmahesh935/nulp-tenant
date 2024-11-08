@@ -181,11 +181,38 @@
             <div class="item">
                 <div class="main-wrapper w-100 h-580">
                     <div class="row">
+                        <div class="blue-bg1 col-12 col-xl-9">
+                            <div class="container sm-pl-65">
+                                <h2 class="main-head fw-bold col-xl-9 text-white">NATIONAL URBAN LEARNING PLATFORM</h2>
+                                <h4 class="col-xl-9 s-head text-white">
+                                    <span> Launch of e-learning module on the 'Transforming Urban
+                                        Governance through Innovative
+                                        Ecosystem Approaches'</span>
+                                </h4>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="mt-3 text-white">
+                                        <a class="needHelp_Btn text-decoration-none" target="_blank"
+                                            href="https://helpdesknulp.niua.org/public">Need Help</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-photo bgThird-photo d-none d-xl-block">
+                            <img src="images/NULP_Banner_ISCFP.png" alt="banner" class="w-562">
+                        </div>
+                        <div class="behind-photo d-none d-xl-block"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="main-wrapper w-100 h-580">
+                    <div class="row">
                         <div class="green-bg1 col-12 col-xl-9">
                             <div class="container sm-pl-65">
                                 <h2 class="main-head fw-bold col-xl-9 text-white">NATIONAL URBAN LEARNING PLATFORM</h2>
                                 <h4 class="col-xl-9 s-head text-white">
-                                    <span class="fw-bold">Climate Centre for Cities,NIUA</span><span> has launched
+                                    <span class="fw-bold">Climate Centre for Cities, NIUA </span><span> has launched
                                         <span class="fw-bold"> 26 MOOC Modules</span>
                                         aligned with the National Mission for Sustainable Habitat</span>
                                 </h4>
@@ -198,13 +225,12 @@
                                     </div>
                                     <div class="mt-3 text-white">
                                         <a class="needHelp_Btn text-decoration-none" target="_blank"
-                                            style="cursor: pointer;" href="https://helpdesknulp.niua.org/public">Need
-                                            Help</a>
+                                            href="https://helpdesknulp.niua.org/public">Need Help</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-photo1 bgThird-photo d-none d-xl-block">
+                        <div class="bg-photo bgThird-photo d-none d-xl-block">
                             <img src="images/NULP-C-Cube-Banner.png" alt="banner" class="w-562">
                         </div>
                         <div class="behind-photo d-none d-xl-block"></div>
@@ -1168,8 +1194,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <iframe src="videos/26-Mooc-Modules-Launch.mp4" width="100%" height="315" frameBorder="0"
-                        allowFullScreen title="Video Embed"></iframe>
+                    <iframe id="videoFrame" src="videos/26-Mooc-Modules-Launch.mp4" width="100%" height="315"
+                        frameborder="0" allowfullscreen title="Video Embed"></iframe>
                 </div>
 
             </div>
@@ -1267,6 +1293,24 @@
             document.getElementById('resourceLink').style.display = 'none';
         }
     </script>
+    <script>
+        // Get the modal and iframe elements
+        const modal = document.getElementById('exampleModal');
+        const videoFrame = document.getElementById('videoFrame');
+        // Store the initial src of the iframe
+        const videoSrc = videoFrame.src;
+        // Add an event listener for when the modal is completely hidden
+        modal.addEventListener('hidden.bs.modal', function () {
+            // Reset the iframe src to stop the video
+            videoFrame.src = "";
+        });
+        // Add an event listener for when the modal is shown again
+        modal.addEventListener('shown.bs.modal', function () {
+            // Restore the iframe src to start the video again
+            videoFrame.src = videoSrc;
+        });
+    </script>
+
 </body>
 
 </html>
