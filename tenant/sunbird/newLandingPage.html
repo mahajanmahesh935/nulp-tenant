@@ -40,6 +40,59 @@
 </head>
 
 <body>
+
+    <script>
+        // Define the API endpoint and headers
+        const apiUrl = 'https://devnulp.niua.org/get/users';
+        const headers = {
+          'Accept': '*/*',
+          'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8',
+          'Connection': 'keep-alive',
+          'Content-Type': 'application/json',
+          'Origin': 'https://devnulp.niua.org',
+          'Referer': 'https://devnulp.niua.org/webapp/createform',
+          'Sec-Fetch-Dest': 'empty',
+          'Sec-Fetch-Mode': 'cors',
+          'Sec-Fetch-Site': 'same-origin',
+          'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+          'sec-ch-ua': '"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Linux"',
+        };
+    
+        // Define the request body
+        const requestBody = {
+          request: {
+            filters: {
+              status: "1"
+            },
+            sort_by: {
+              lastUpdatedOn: "desc"
+            }
+          }
+        };
+    
+        // Make the API call
+        fetch(apiUrl, {
+          method: 'POST', // curl uses POST for this API
+          headers: headers,
+          body: JSON.stringify(requestBody) // Convert the request body to JSON string
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+          }
+          return response.json();
+        })
+        .then(data => {
+          console.log(data); // Log the API response
+          // Display the API response in the HTML
+          document.getElementById('totalMembers').textContent = JSON.stringify(data.result.count, null, 2);
+        })
+        .catch(error => {
+          console.error('There was a problem with the fetch operation:', error);
+        });
+      </script>
     <div class="maintainence-msg">
         <marquee behavior="" direction="">
             We are setting up for NULP 3.0 with the release of additional features. Therefore, some of the services on the portal will be inaccessible. Inconvenience caused will be highly regretted. We will be back soon.
@@ -168,7 +221,7 @@
                     <p>Urban Local Bodies</p>
                 </div>
                 <div class="single-info text-center font-600">
-                    <span id="count3" class="display-4">106421</span>
+                    <span id="totalMembers" class="display-4"></span>
                     <p>NULP Community Members</p>
                 </div>
             </div>
