@@ -65,9 +65,9 @@
 </head>
 
 <body>
-    <!-- <script>
+    <script>
         // Define the API endpoint and headers
-        const apiUrl = 'https://devnulp.niua.org/get/users';
+        const apiUrl = '/get/users';
         const headers = {
           'Accept': '*/*',
           'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8',
@@ -116,7 +116,7 @@
         .catch(error => {
           console.error('There was a problem with the fetch operation:', error);
         });
-      </script> -->
+      </script>
     <!-- <div class="maintainence-msg">
         <marquee behavior="" direction="">
             You are currently viewing the version of NULP 4.0. Since the deployments have been recently completed you
@@ -437,7 +437,7 @@
                     <p>Urban Local Bodies</p>
                 </div>
                 <div class="single-info text-center font-600">
-                    <span id="count3" class="display-4">107645</span>
+                    <span id="totalMembers" class="display-4"></span>
                     <p>NULP Community Members</p>
                 </div>
             </div>
